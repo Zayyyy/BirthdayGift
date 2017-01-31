@@ -1,2 +1,2 @@
 # BirthdayGift
-a blog recording for me and my friend
+a blog to record stories about me and my friend
