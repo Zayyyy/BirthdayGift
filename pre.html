@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pre</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="css/globalSetting.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/pre.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/globalSetting.js"></script>
+
+</head>
+<body>
+<audio id="bgMusic" src="audio/lifeLine.mp3" preload="auto"  loop="loop"></audio>
+<div id="container" class="animated fadeIn">
+    <div class="title1">
+        <label class="animated" id="manchang">这是一个漫长</label>
+        <label class="animated" id="qihuang">又奇幻的旅程</label>
+        <p class="animated" id="welcome">WELCOME TO THIS WORLD I PREPARED FOR U</p>
+    </div>
+    <div class="title4">
+        <div class="animated" id="shike">即将呈现的不单单是一个时刻</div>
+        <p class="animated" id="moment">NOT ONLY A MOMENT</p>
+    </div>
+    <div class="title5">
+        <div class="animated" id="gushi">而是一场曼妙的故事</div>
+        <p class="animated" id="story">BUT AN IMPRESSIVE STORY</p>
+
+    </div>
+    <div class="title2">
+        <p class="animated" id="ni">你</p>
+    </div>
+    <div class="title3">
+        <div class="animated" id="xindong">做好心动的准备了吗？</div>
+        <p class="animated" id="ready">ARE U READY ?</p>
+    </div>
+    <div class="begin-btn waves waves-animation" id="button" onclick="jumpToIndex()">开启</div>
+    <img src="image/heart.png" class="heart">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+        <!--5-->
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <!--<div class="rect5"></div>-->
+        <!--<div class="rect6"></div>-->
+
+
+
+    </div>
+    <div class="sound-label"> <label>SOUND</label><span id = "sound-label" onclick="pauseMusic()">ON</span> </div>
+
+</div>
+<script type="text/javascript">
+    var audio = document.getElementsByTagName('audio')[0];
+    audio.volume = 0.3;
+    flag = 0;
+    $(function() {
+        $("#container").height($(window).height());
+        setTimeout(function () {
+            $(".heart").fadeIn(800);
+            $("#manchang").show();
+            $("#manchang").addClass("fadeInRight");
+
+        }
+            , 1000);
+        setTimeout(function () {
+                audio.play();
+            }
+            , 1200);
+        setTimeout(function () {
+                $(".spinner").fadeIn(1000);
+
+            }
+            , 1500);
+
+        setTimeout(function () {
+                $("#qihuang").show();
+                $("#qihuang").addClass("fadeInRight");
+            }
+            , 1400);
+        setTimeout(function () {
+                $("#welcome").show();
+                $("#welcome").addClass("fadeInRight");
+            }
+            , 2000);
+        setTimeout(function () {
+                $("#manchang").removeClass("fadeInRight");
+                $("#manchang").addClass("fadeOutLeft");
+                $("#qihuang").removeClass("fadeInRight");
+                $("#qihuang").addClass("fadeOutRight");
+                $("#welcome").removeClass("fadeInRight");
+                $("#welcome").addClass("fadeOutDown");
+            }
+            , 6000);
+
+        setTimeout(function () {
+                $("#moment").show();
+                $("#moment").addClass("rollIn");
+                $("#shike").show();
+                $("#shike").addClass("rollIn");
+            }
+            , 7000);
+        setTimeout(function () {
+                $("#moment").removeClass("rollIn");
+                $("#moment").addClass("rollOut");
+                $("#shike").removeClass("rollIn");
+                $("#shike").addClass("rollOut");
+
+
+            }
+            , 9000);
+        setTimeout(function () {
+
+                $("#story").show();
+                $("#story").addClass("rotateIn");
+                $("#gushi").show();
+                $("#gushi").addClass("rotateIn");
+
+            }
+            , 10000);
+        setTimeout(function () {
+                $("#story").removeClass("rotateIn");
+                $("#story").addClass("rotateOut");
+                $("#gushi").removeClass("rotateIn");
+                $("#gushi").addClass("rotateOut");
+
+            }
+            , 14500);
+        setTimeout(function () {
+                $("#ni").show();
+                $("#ni").addClass("zoomIn");
+            }
+            , 16000);
+        setTimeout(function () {
+                $("#ni").removeClass("zoomIn");
+                $("#ni").addClass("zoomOutUp");
+
+            }
+            , 17000);
+        setTimeout(function () {
+                $("#xindong").show();
+                $("#xindong").addClass("bounceInDown");
+                $("#ready").show();
+                $("#ready").addClass("bounceInDown");
+            }
+            , 17500);
+        setTimeout(function () {
+                $("#button").fadeIn(1000);
+
+            }
+            , 18500);
+
+
+    })
+    $(window).resize(function() {
+        $("#container").height($(window).height());
+    });
+
+    function jumpToIndex() {
+        setInterval(function () {
+            window.location = "index.html";
+        }, 1000);
+    }
+
+    function pauseMusic() {
+       if(flag){
+           audio.play();
+           flag = 0;
+           $("#sound-label").text("ON");
+       }
+       else {
+           audio.pause();
+           flag = 1;
+           $("#sound-label").text("OFF");
+
+       }
+
+    }
+
+</script>
+</body>
+</html>

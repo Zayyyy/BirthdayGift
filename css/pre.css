@@ -1,0 +1,237 @@
+#container{
+    background-color: #263238;
+    height: 100px;
+    width: 100%;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn 3s;
+}
+.heart{
+    position: absolute;
+    width: 15%;
+    margin-left: 42.5%;
+    top: 42.5%;
+    animation: pound .4s infinite alternate;
+    transform-origin: center;
+    z-index: 2;
+    display: none;
+
+}
+@keyframes pound {
+    to { transform: scale(1.4); }
+}
+.spinner {
+    position: absolute;
+    margin-left: auto;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    display: none;
+    font-size: 10px;
+    z-index: 1;
+    overflow-x: hidden;
+
+}
+
+.spinner > div {
+    background-color: #e57373;
+    height: 140px;
+
+    width: .7%;
+    margin-left: 1%;
+    float: left;
+
+    /*display: block;*/
+    border-radius: 50px;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+
+    box-shadow: 1px 5px 5px rgba(75,11,9,0.3);
+}
+
+.spinner .rect2 {
+    margin-top: 10px;
+    height: 160px;
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    margin-top: 20px;
+    height: 180px;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    margin-top: 30px;
+    height: 200px;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    margin-top: 20px;
+    height: 180px;
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+.spinner .rect6 {
+    margin-top: 10px;
+    height: 160px;
+    -webkit-animation-delay: -0.7s;
+    animation-delay: -0.7s;
+}
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+           -webkit-transform: scaleY(1.0);
+       }
+}
+
+.sound-label{
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    color: #eeeeee;
+}
+.sound-label span{
+    color: silver;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.title1{
+    padding-top: 100px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 400%;
+}
+
+.title1 p{
+    font-size: 40%;
+}
+
+.title2{
+    margin-top: -300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 800%;
+}
+
+.title3{
+    margin-top: -300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 400%;
+}
+
+.title3 p{
+    font-size: 40%;
+}
+
+.title4{
+    margin-top: -150px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 400%;
+}
+
+.title4 p{
+    font-size: 40%;
+}
+.title5{
+    margin-top: -200px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 400%;
+}
+
+.title5 p{
+    font-size: 40%;
+}
+#manchang{
+    display: none;
+}
+#qihuang{
+    display: none;
+}
+#welcome{
+    display: none;
+}
+#ni{
+    display: none;
+}
+#ready{
+    display: none;
+}
+#xindong{
+    display: none;
+}
+#gushi{
+    display: none;
+}
+#story{
+    display: none;
+}
+#moment{
+    display: none;
+}
+#shike{
+    display: none;
+}
+
+.fadeInRight{
+    animation-duration: 3s;
+}
+.rotateIn{
+    animation-duration: 2s;
+}
+.rotateOut{
+    animation-duration: 2s;
+}
+.zoomIn{
+    animation-duration: 1s;
+}
+.zoomOutUp{
+    animation-duration: 1s;
+}
+.rollOut{
+    animation-duration: 2s;
+}
+#button{
+    display: none;
+}
+.begin-btn{
+
+    position: absolute;
+    font-size: 200%;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px 8px 8px 8px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 20%;
+    height: 50px;
+    top: 80%;
+    right: 40%;
+    color: #eceff1;
+
+    background-color: transparent;
+}
+
