@@ -36,10 +36,8 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
     // $('#nav').localScroll(800);
-
-    $('#intro').parallax("50%", 0.1);
-    $('#second').parallax("50%", 0.1);
-    $('.bg').parallax("50%", 0.1);
-    $('#third').parallax("20%", 0.5);
+    $('#head').parallax("100%", 0.1);
+    $('#first').parallax("100%", 0.5);
+    $('#second').parallax("100%", 0.5);
 
 })

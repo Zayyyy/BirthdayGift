@@ -4,7 +4,42 @@
 }
 
 #head{
-    background-color: #f8bbd0;
+    background:#f8bbd0 no-repeat fixed;
+    margin: 0 auto;
+    padding: 0;
     width: 100%;
     height: 100%;
+}
+
+
+#first{
+    background:url(../image/bg1.png) no-repeat fixed;
+    color: white;
+    width: 100%;
+    background-size: contain;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#second{
+    background: url(../image/bg1.png) no-repeat fixed;
+    color: white;
+    width: 100%;
+    background-size: contain;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.story{
+    margin: 0 auto;
+    min-width: 980px;
+    overflow: auto;
+    width: 980px;
+}
+
+.story .float-left, .story .float-right{
+    padding: 100px 0 0 0;
+    position: relative;
+    width: 350px;
 }
