@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<audio id="bgMusic" src="audio/lifeLine.mp3" preload="auto"  loop="loop"></audio>
+<audio id="bgMusic" src="audio/lifeLine.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
 <div id="container" class="animated fadeIn">
     <div class="title1">
         <label class="animated" id="manchang">这是一个漫长</label>
@@ -128,10 +128,10 @@
 
         }
             , 1000);
-        setTimeout(function () {
-                audio.play();
-            }
-            , 1200);
+//        setTimeout(function () {
+//                audio.play();
+//            }
+//            , 1200);
         setTimeout(function () {
                 $(".spinner").fadeIn(1000);
 
