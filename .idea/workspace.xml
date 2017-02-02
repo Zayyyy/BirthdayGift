@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa25e2e7-a4ff-480f-a4c7-1b5e251f2de5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/pre.css" afterPath="$PROJECT_DIR$/css/pre.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="aa25e2e7-a4ff-480f-a4c7-1b5e251f2de5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -69,7 +66,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
+            <state relative-caret-position="462">
               <caret line="269" column="19" lean-forward="false" selection-start-line="269" selection-start-column="19" selection-end-line="269" selection-end-column="19" />
               <folding>
                 <element signature="n#div#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -313,12 +310,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485901838325</updated>
-      <workItem from="1485901842489" duration="50904000" />
+      <workItem from="1485901842489" duration="50974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50904000" />
+    <option name="totallyTimeSpent" value="50974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-51" y="23" width="1680" height="945" extended-state="0" />
@@ -495,7 +492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
+        <state relative-caret-position="462">
           <caret line="269" column="19" lean-forward="false" selection-start-line="269" selection-start-column="19" selection-end-line="269" selection-end-column="19" />
           <folding>
             <element signature="n#div#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
