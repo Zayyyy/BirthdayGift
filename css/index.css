@@ -13,7 +13,7 @@
 
 
 #first{
-    background:url(../image/bg1.png) no-repeat fixed;
+    background:url(../image/bg1.jpg) no-repeat fixed;
     color: white;
     width: 100%;
     background-size: contain;
@@ -22,7 +22,7 @@
 }
 
 #second{
-    background: url(../image/bg1.png) no-repeat fixed;
+    background: url(../image/bg1.jpg) no-repeat fixed;
     color: white;
     width: 100%;
     background-size: contain;
