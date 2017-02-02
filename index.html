@@ -29,6 +29,26 @@
         <p class="animated" id="story">BUT AN IMPRESSIVE STORY</p>
 
     </div>
+    <div class="title6"  id="but">
+        <div class="animated" >不过...</div>
+        <p class="animated" >HOWEVER...</p>
+
+    </div>
+    <div class="title7"  id="wait">
+        <div class="animated">在开始之前先等等</div>
+        <p class="animated" >WAIT FOR A MINUTE BEFORE WE START</p>
+
+    </div>
+    <div class="title8"  id="since">
+        <div class="animated" >毕竟好戏开始之前</div>
+        <p class="animated" >SINCE BEFORE THIS JOURNEY</p>
+
+    </div>
+    <div class="title9"  id="listen">
+        <div class="animated">还是要拖一下时间的嘛</div>
+        <p class="animated">LISTEN TO THIS MUSIC WITH YOUR HEART</p>
+
+    </div>
     <div class="title2">
         <p class="animated" id="ni">你</p>
     </div>
@@ -195,29 +215,84 @@
 
             }
             , 15500);
+
         setTimeout(function () {
+
+                $("#but").show();
+                $("#but").addClass("fadeInDown");
+
+            }
+            , 17000);
+        setTimeout(function () {
+                $("#but").removeClass("fadeInDown");
+                $("#but").addClass("fadeOutDown");
+
+            }
+            , 21000);
+        setTimeout(function () {
+                $("#but").hide();
+                $("#wait").show();
+                $("#wait").addClass("fadeInDown");
+
+            }
+            , 23000);
+        setTimeout(function () {
+                $("#wait").removeClass("fadeInDown");
+                $("#wait").addClass("fadeOutDown");
+
+            }
+            , 27000);
+        setTimeout(function () {
+                $("#wait").hide();
+                $("#since").show();
+                $("#since").addClass("fadeInDown");
+
+            }
+            , 29000);
+        setTimeout(function () {
+                $("#since").removeClass("fadeInDown");
+                $("#since").addClass("fadeOutDown");
+
+            }
+            , 33000);
+        setTimeout(function () {
+                $("#since").hide();
+                $("#listen").show();
+                $("#listen").addClass("fadeInDown");
+
+            }
+            , 35000);
+        setTimeout(function () {
+                $("#listen").removeClass("fadeInDown");
+                $("#listen").addClass("fadeOutDown");
+
+            }
+            , 39000);
+
+        setTimeout(function () {
+                $("#listen").hide();
                 $("#ni").show();
                 $("#ni").addClass("zoomIn");
             }
-            , 17000);
+            , 41000);
         setTimeout(function () {
                 $("#ni").removeClass("zoomIn");
                 $("#ni").addClass("zoomOutUp");
 
             }
-            , 18000);
+            , 42000);
         setTimeout(function () {
                 $("#xindong").show();
                 $("#xindong").addClass("bounceInDown");
                 $("#ready").show();
                 $("#ready").addClass("bounceInDown");
             }
-            , 18500);
+            , 42500);
         setTimeout(function () {
                 $("#button").fadeIn(1000);
 
             }
-            , 19500);
+            , 43500);
 
 
     })

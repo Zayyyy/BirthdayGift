@@ -161,6 +161,50 @@
 .title5 p{
     font-size: 40%;
 }
+.title6{
+    margin-top: -200px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 400%;
+}
+
+.title6 p{
+    font-size: 40%;
+}
+.title7{
+    margin-top: -200px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 400%;
+}
+
+.title7 p{
+    font-size: 40%;
+}
+.title8{
+    margin-top: -200px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 400%;
+}
+
+.title8 p{
+    font-size: 40%;
+}
+.title9{
+    margin-top: -200px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 400%;
+}
+
+.title9 p{
+    font-size: 40%;
+}
 #manchang{
     display: none;
 }
@@ -191,9 +235,26 @@
 #shike{
     display: none;
 }
-
+#but{
+    display: none;
+}
+#since{
+    display: none;
+}
+#wait{
+    display: none;
+}
+#listen{
+    display: none;
+}
 .fadeInRight{
     animation-duration: 3s;
+}
+.fadeInDown{
+    animation-duration: 2s;
+}
+.fadeOutDown{
+    animation-duration: 2s;
 }
 .rotateIn{
     animation-duration: 2s;
