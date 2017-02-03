@@ -68,6 +68,7 @@
     backface-visibility: hidden;
     -webkit-animation: in 500ms 3.8s ease-out forwards;
     animation: in 500ms 3.8s ease-out forwards;
+
 }
 
 .velas:after,
@@ -227,7 +228,7 @@ rect{
     font-size: 200%;
     font-weight: 700;
     animation-duration: 2s;
-    animation-delay: 3s;
+    animation-delay: 2s;
 }
 .title-happy i{
     font-style: normal;

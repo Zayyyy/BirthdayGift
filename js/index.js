@@ -46,6 +46,7 @@ $(document).ready(function(){
     $('#fifth').parallax("100%", 0);
     $('#sixth').parallax("100%", 0);
     $('#seventh').parallax("100%", 0);
+
     // $('#second').parallax("100%", 0);
     // $('#third').parallax("100%", 0);
 

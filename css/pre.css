@@ -282,9 +282,8 @@
     letter-spacing: 2px;
     text-align: center;
     line-height: 50px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 8px 8px 8px 8px;
+    border: #9e9e9e 1px solid;
+    border-radius: 5px;
     padding-top: 1%;
     padding-bottom: 1%;
     width: 20%;
@@ -294,5 +293,12 @@
     color: #eceff1;
 
     background-color: transparent;
+    -webkit-transition: border-color 0.3s; /* Safari */
+    transition: border-color 0.3s ease-in;
+}
+.begin-btn:hover{
+    border-color: #fff;
+    -webkit-transition: border-color 0.3s; /* Safari */
+    transition: border-color 0.3s ease-in;
 }
 
