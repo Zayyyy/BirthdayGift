@@ -53,14 +53,19 @@ console.log(document.getElementById("relleno_2").getAttribute("begin"));
 })
 window.onload = function () {
     // console.log("9");
-    var html = '<div class="velas">'+
+    var html1 = '<div class="velas">'+
     '<div class="fuego"></div>'+
         '<div class="fuego"></div>'+
         '<div class="fuego"></div>'+
         '<div class="fuego"></div>'+
         '<div class="fuego"></div>'+
         '</div>';
-    $("#cake").before(html);
+    $("#cake").before(html1);
+    var html2 = ' <div class="line1"></div>'+
+        '<div class="line2"></div>';
+    $(".title-happy").before(html2);
+    var html3 = '<div class="line3"></div>';
+    $(".title-happy").after(html3);
 }
 var canvas = document.getElementById('star'),
     ctx = canvas.getContext('2d');

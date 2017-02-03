@@ -129,12 +129,12 @@
 rect{
     -webkit-transform: translateY(-500px);
     -ms-transform: translateY(-500px);
-    transform: translateY(-500px);
+    transform: translateY(-400px);
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-animation: in 500ms 0.5s ease-out forwards;
-    animation: in 500ms 0.5s ease-out forwards;
+    -webkit-animation: in 300ms 0.1s ease-out forwards;
+    animation: in 300ms 0.1s ease-out forwards;
 }
 /* ============================================== Animation Fire
 */
