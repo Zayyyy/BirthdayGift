@@ -51,7 +51,17 @@ console.log(document.getElementById("relleno_2").getAttribute("begin"));
     // $('#third').parallax("100%", 0);
 
 })
-
+window.onload = function () {
+    // console.log("9");
+    var html = '<div class="velas">'+
+    '<div class="fuego"></div>'+
+        '<div class="fuego"></div>'+
+        '<div class="fuego"></div>'+
+        '<div class="fuego"></div>'+
+        '<div class="fuego"></div>'+
+        '</div>';
+    $("#cake").before(html);
+}
 var canvas = document.getElementById('star'),
     ctx = canvas.getContext('2d');
     w = canvas.width = window.innerWidth,
