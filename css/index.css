@@ -293,12 +293,14 @@ rect{
     background-color: #fff;
 
 }
+
+
 .line5{
     margin-top: 10px;
     margin-left: 50%;
     width: 3px;
-    height: 800px;
-
+    height: 0px;
+    animation: dropDown5 4.5s 0.1s forwards;
     background-color: #fff;
 
 }
@@ -323,6 +325,7 @@ rect{
     margin: 0 auto;
     height: 1000px;
     padding: 0;
+    overflow-y: hidden;
 }
 #third{
     background: url(../image/bg5.jpg) no-repeat fixed;
@@ -332,6 +335,7 @@ rect{
     margin: 0 auto;
     height: 1000px;
     padding: 0;
+    overflow-y: hidden;
 }
 #fourth{
     background: url(../image/bg3.jpg) no-repeat fixed;
@@ -341,6 +345,7 @@ rect{
     margin: 0 auto;
     height: 1000px;
     padding: 0;
+    overflow-y: hidden;
 }
 #fifth{
     background: url(../image/bg11.jpg) no-repeat fixed;
@@ -350,6 +355,7 @@ rect{
     margin: 0 auto;
     height: 1000px;
     padding: 0;
+    overflow-y: hidden;
 }
 #sixth{
     background: url(../image/bg4.jpg) no-repeat fixed;
@@ -359,6 +365,7 @@ rect{
     margin: 0 auto;
     height: 1000px;
     padding: 0;
+    overflow-y: hidden;
 }
 #seventh{
     background: url(../image/bg7.jpg) no-repeat fixed;
@@ -368,6 +375,7 @@ rect{
     margin: 0 auto;
     height: 1000px;
     padding: 0;
+    overflow-y: hidden;
 }
 
 
@@ -450,16 +458,36 @@ rect{
     margin-top: 0px;
     margin-left: 80px;
     width: 3px;
-    height: 200px;
-
+    height: 0px;
+    animation: dropDown7 4s ease forwards;
     background-color: #fff;
 }
+@keyframes dropDown7 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 200px;
+    }
+}
+
+@keyframes dropDown5 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 800px;
+    }
+}
+
 .line6{
     margin-top: 10px;
     margin-left: 80px;
     width: 3px;
-    height: 400px;
-
+    height: 0px;
+    animation: dropDown5 4s ease forwards;
     background-color: #fff;
 
 }

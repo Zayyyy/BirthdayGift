@@ -46,9 +46,9 @@ $(document).ready(function(){
     $('#fifth').parallax("100%", 0);
     $('#sixth').parallax("100%", 0);
     $('#seventh').parallax("100%", 0);
-console.log(document.getElementById("relleno_2").getAttribute("begin"));
     // $('#second').parallax("100%", 0);
     // $('#third').parallax("100%", 0);
+    new WOW().init();
 
 })
 window.onload = function () {
@@ -173,6 +173,8 @@ $(window).resize(function() {
 });
 
 var flagStar1 = 0;
+var flagStar2 = 0;
+var flagStar3 = 0;
 function clickStar() {
     if(flagStar1){
         $("#star1").addClass("fa-star-o");
@@ -184,4 +186,40 @@ function clickStar() {
         $("#star1").addClass("fa-star");
         flagStar1 = 1;
     }
+    if(flagStar2){
+        $("#star2").addClass("fa-star-o");
+        $("#star2").removeClass("fa-star");
+        flagStar2 = 0;
+    }
+    else{
+        $("#star2").removeClass("fa-star-o");
+        $("#star2").addClass("fa-star");
+        flagStar2 = 1;
+    }
+    if(flagStar3){
+        $("#star3").addClass("fa-star-o");
+        $("#star3").removeClass("fa-star");
+        flagStar3 = 0;
+    }
+    else{
+        $("#star3").removeClass("fa-star-o");
+        $("#star3").addClass("fa-star");
+        flagStar3 = 1;
+    }
+}
+
+function jumpToDisney() {
+    setInterval(function () {
+        window.location = "Disney.html#head";
+    }, 1000);
+}
+function jumpToBear() {
+    setInterval(function () {
+        window.location = "Disney.html#head2";
+    }, 1000);
+}
+function jumpToLine() {
+    setInterval(function () {
+        window.location = "Disney.html#head1";
+    }, 1000);
 }
