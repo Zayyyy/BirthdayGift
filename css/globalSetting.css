@@ -97,7 +97,7 @@ body{
 
 @-webkit-keyframes slideDown {
     0% {
-        -webkit-transform: translateY(-4em)
+        -webkit-transform: translateY(-110px)
     }
 
     100% {
@@ -107,7 +107,7 @@ body{
 
 @-moz-keyframes slideDown {
     0% {
-        -moz-transform: translateY(-4em)
+        -moz-transform: translateY(-110px)
     }
 
     100% {
@@ -117,7 +117,7 @@ body{
 
 @-o-keyframes slideDown {
     0% {
-        -o-transform: translateY(-4em)
+        -o-transform: translateY(-110px)
     }
 
     100% {
@@ -127,7 +127,7 @@ body{
 
 @keyframes slideDown {
     0% {
-        transform: translateY(-4em)
+        transform: translateY(-110px)
     }
 
     100% {
@@ -148,7 +148,7 @@ body{
     }
 
     100% {
-        -webkit-transform: translateY(-4em)
+        -webkit-transform: translateY(-110px)
     }
 }
 
@@ -158,7 +158,7 @@ body{
     }
 
     100% {
-        -moz-transform: translateY(-4em)
+        -moz-transform: translateY(-110px)
     }
 }
 
@@ -168,7 +168,7 @@ body{
     }
 
     100% {
-        -o-transform: translateY(-4em)
+        -o-transform: translateY(-110px)
     }
 }
 
@@ -178,7 +178,7 @@ body{
     }
 
     100% {
-        transform: translateY(-4em)
+        transform: translateY(-110px)
     }
 }
 

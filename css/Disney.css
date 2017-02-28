@@ -1,7 +1,41 @@
 body{
     background-color: #fff;
 }
+.sub-nav{
+    position: fixed;
+    text-align: right;
+    top: 100px;
+    right: 20px;
+    font-family: Futura;
+    color: rgba(0,0,0,0.6);
+    font-size: 60%;
+    z-index: 10;
 
+    cursor: default;
+}
+.sub-nav div{
+    margin-top: 15px;
+}
+.sub-nav div:hover{
+    color: #000;
+}
+.sound{
+    position: fixed;
+    text-align: right;
+    bottom: 20px;
+    right: 30px;
+    font-family: Futura;
+    color: rgba(0,0,0,1);
+    font-size: 60%;
+    z-index: 10;
+
+    cursor: default;
+}
+.sound span{
+    color: rgba(0,0,0,0.6);
+
+    cursor: pointer;
+}
 #head{
     height: 800px;
     width: 100%;
@@ -939,6 +973,567 @@ figure:hover section{
 }
 
 
+.grid21{
+    margin: 0 auto;
+    width: 1120px;
+    list-style: none;
+    text-align: center;
+    height: 460px;
+}
+
+.figure21 section{
+    position: absolute;
+    text-align: left;
+    top:10px;
+    left: 490px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.figure21 section h1 {
+    font-size: 300%;
+    font-family: Futura;
+}
+.figure21 section p {
+    margin-left: 120px;
+    width: 350px;
+    font-size: 80%;
+    color: #616161;
+}
+.figure21 section h4 {
+    width: 350px;
+    margin-left: 120px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure21{
+    margin: 10px ;
+    width: 1000px;
+    height: 460px;
+
+}
+
+.figure21 figcaption::before,
+.figure21 figcaption::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9;
+}
+
+.figure21 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 450px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure21 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 20px 0 0 20px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure21:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(460px,20px,0);
+    z-index: 11;
+}
+.figure21:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-30px,-30px,0);
+    z-index: 11;
+}
+
+
+.grid22{
+    margin: 0 auto;
+    width: 782px;
+    list-style: none;
+    text-align: center;
+    height: 550px;
+}
+
+.figure22 section{
+    position: absolute;
+    top:50px;
+    left: 0px;
+    text-align: left;
+
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+.figure22 section h1 {
+
+    font-size: 300%;
+}
+.figure22 section p {
+    margin-left: 50px;
+    width: 350px;
+    font-size: 100%;
+    font-family: "Big Caslon";
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #616161;
+}
+.figure22 section h4 {
+    margin-left: 50px;
+    width: 200px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure22{
+    margin: 10px ;
+    width: 800px;
+    height: 550px;
+
+}
+
+.figure22 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 20px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure22 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 50px 0 0 380px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure22:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(30px,30px,0);
+    z-index: 11;
+}
+.figure22:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-420px,-60px,0);
+    z-index: 11;
+}
+
+.grid23{
+    margin: 0 auto;
+    width: 980px;
+    list-style: none;
+    text-align: center;
+    height: 770px;
+}
+
+.figure23 section{
+    position: absolute;
+    text-align: left;
+    top:90px;
+    left: 430px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.figure23 section h1 {
+    font-size: 300%;
+    font-family: Futura;
+}
+.figure23 section p {
+    margin-left: 80px;
+    font-size: 80%;
+    color: #616161;
+}
+.figure23 section h4 {
+    margin-left: 80px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure23{
+    margin: 10px ;
+    width: 800px;
+    height: 770px;
+
+}
+
+.figure23 figcaption::before,
+.figure23 figcaption::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9;
+}
+
+.figure23 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 320px 0px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure23 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 80px 0 0 20px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure23:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(360px,0px,0);
+    z-index: 11;
+}
+.figure23:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-20px,-90px,0);
+    z-index: 11;
+}
+
+
+.grid24{
+    margin: 0 auto;
+    width: 782px;
+    list-style: none;
+    text-align: center;
+    height: 550px;
+}
+
+.figure24 section{
+    position: absolute;
+    top:50px;
+    left: 0px;
+    text-align: left;
+
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+.figure24 section h1 {
+
+    font-size: 300%;
+}
+.figure24 section p {
+    margin-left: 50px;
+    width: 350px;
+    font-size: 100%;
+    font-family: "Big Caslon";
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #616161;
+}
+.figure24 section h4 {
+    margin-left: 50px;
+    width: 250px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure24{
+    margin: 10px ;
+    width: 800px;
+    height: 550px;
+
+}
+
+.figure24 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 20px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure24 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 50px 0 0 380px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure24:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(30px,30px,0);
+    z-index: 11;
+}
+.figure24:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-420px,-60px,0);
+    z-index: 11;
+}
+
+.grid25{
+    margin: 0 auto;
+    width: 1000px;
+    list-style: none;
+    text-align: center;
+    height: 500px;
+}
+
+.figure25 section{
+    position: absolute;
+    text-align: center;
+    top:50px;
+    left: 570px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.figure25 section h1 {
+    font-size: 300%;
+    font-family: Futura;
+}
+.figure25 section p {
+
+    font-size: 80%;
+    color: #616161;
+}
+.figure25 section h4 {
+
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure25{
+    margin: 10px ;
+    width: 1000px;
+    height: 500px;
+
+}
+
+.figure25 figcaption::before,
+.figure25 figcaption::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9;
+}
+
+.figure25 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 510px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure25 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 50px 0 0 20px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure25:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(560px,30px,0);
+    z-index: 11;
+}
+.figure25:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-20px,-60px,0);
+    z-index: 11;
+}
+
+
+.grid26{
+    margin: 0 auto;
+    width: 822px;
+    list-style: none;
+    text-align: center;
+    height: 500px;
+}
+
+.figure26 section{
+    position: absolute;
+    top:50px;
+    left: 0px;
+    text-align: left;
+
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+.figure26 section h1 {
+
+    font-size: 300%;
+}
+.figure26 section p {
+    margin-left: 50px;
+    width: 350px;
+    font-size: 100%;
+    font-family: "Big Caslon";
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #616161;
+}
+.figure26 section h4 {
+    margin-left: 50px;
+    width: 400px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure26{
+    margin: 10px ;
+    width: 800px;
+    height: 500px;
+
+}
+
+.figure26 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 20px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure26 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 50px 0 0 400px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure26:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(30px,30px,0);
+    z-index: 11;
+}
+.figure26:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-420px,-60px,0);
+    z-index: 11;
+}
+
+.grid27{
+    margin: 0 auto;
+    width: 1000px;
+    list-style: none;
+    text-align: center;
+    height: 990px;
+}
+
+.figure27 section{
+    position: absolute;
+    text-align: center;
+    top:250px;
+    left: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.figure27 section h1 {
+    font-size: 300%;
+    font-family: Futura;
+}
+.figure27 section p {
+    margin-left: 80px;
+    font-size: 80%;
+    color: #616161;
+}
+.figure27 section h4 {
+    margin-left: 80px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure27{
+    margin: 10px ;
+    width: 1000px;
+    height: 990px;
+
+}
+
+.figure27 figcaption::before,
+.figure27 figcaption::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9;
+}
+
+.figure27 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 510px 100px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure27 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 150px 0 0 20px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure27:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(560px,130px,0);
+    z-index: 11;
+}
+.figure27:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-20px,-160px,0);
+    z-index: 11;
+}
 /***********************************/
 /*head3*/
 /***********************************/
@@ -970,6 +1565,815 @@ figure:hover section{
     height: 10px;
     margin: auto;
     background-color: #ffeb3b;
+}
+
+.grid31{
+    margin: 0 auto;
+    width: 842px;
+    list-style: none;
+    text-align: center;
+    height: 550px;
+}
+
+.figure31 section{
+    position: absolute;
+    top:50px;
+    left: 0px;
+    text-align: left;
+
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+.figure31 section h1 {
+
+    font-size: 300%;
+}
+.figure31 section p {
+    margin-left: 50px;
+    width: 350px;
+    font-size: 100%;
+    font-family: "Big Caslon";
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #616161;
+}
+.figure31 section h4 {
+    margin-left: 50px;
+    width: 400px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure31{
+    margin: 10px ;
+    width: 800px;
+    height: 550px;
+
+}
+
+.figure31 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 20px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure31 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 50px 0 0 410px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure31:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(30px,30px,0);
+    z-index: 11;
+}
+.figure31:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-420px,-60px,0);
+    z-index: 11;
+}
+
+.grid32{
+    margin: 0 auto;
+    width: 913px;
+    list-style: none;
+    text-align: center;
+    height: 550px;
+}
+
+.figure32 section{
+    position: absolute;
+    text-align: left;
+    top:10px;
+    left: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.figure32 section h1 {
+    font-size: 300%;
+}
+.figure32 section p {
+    margin-left: 50px;
+    font-size: 80%;
+    color: #616161;
+}
+.figure32 section h4 {
+    margin-left: 50px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure32{
+    margin: 10px ;
+    width: 800px;
+    height: 550px;
+
+}
+
+.figure32 figcaption::before,
+.figure32 figcaption::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9;
+}
+
+.figure32 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 353px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure32 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 20px 0 0 20px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure32:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(360px,20px,0);
+    z-index: 11;
+}
+.figure32:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-30px,-20px,0);
+    z-index: 11;
+}
+
+.grid33{
+    margin: 0 auto;
+    width: 842px;
+    list-style: none;
+    text-align: center;
+    height: 550px;
+}
+
+.figure33 section{
+    position: absolute;
+    top:50px;
+    left: 0px;
+    text-align: center;
+
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+.figure33 section h1 {
+
+    font-size: 300%;
+}
+.figure33 section p {
+    margin-left: 50px;
+    width: 350px;
+    font-size: 100%;
+    font-family: "Big Caslon";
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #616161;
+}
+.figure33 section h4 {
+
+    width: 400px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure33{
+    margin: 10px ;
+    width: 800px;
+    height: 550px;
+
+}
+
+.figure33 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 20px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure33 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 50px 0 0 410px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure33:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(30px,30px,0);
+    z-index: 11;
+}
+.figure33:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-420px,-60px,0);
+    z-index: 11;
+}
+
+.grid34{
+    margin: 0 auto;
+    width: 820px;
+    list-style: none;
+    text-align: center;
+    height: 800px;
+}
+
+.figure34 section{
+    position: absolute;
+    text-align: center;
+    top:310px;
+    left: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.figure34 section h1 {
+    font-size: 300%;
+}
+.figure34 section p {
+    margin-left: 80px;
+    font-size: 80%;
+    color: #616161;
+}
+.figure34 section h4 {
+
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure34{
+    margin: 10px ;
+    width: 800px;
+    height: 800px;
+
+}
+
+.figure34 figcaption::before,
+.figure34 figcaption::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9;
+}
+
+.figure34 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 400px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure34 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 120px 0 0 20px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure34:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(410px,30px,0);
+    z-index: 11;
+}
+.figure34:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-30px,-130px,0);
+    z-index: 11;
+}
+
+.grid35{
+    margin: 0 auto;
+    width: 842px;
+    list-style: none;
+    text-align: center;
+    height: 550px;
+}
+
+.figure35 section{
+    position: absolute;
+    top:50px;
+    left: 0px;
+    text-align: left;
+
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+.figure35 section h1 {
+
+    font-size: 300%;
+}
+.figure35 section p {
+    margin-left: 50px;
+    width: 350px;
+    font-size: 100%;
+    font-family: "Big Caslon";
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #616161;
+}
+.figure35 section h4 {
+    margin-left: 50px;
+    width: 400px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure35{
+    margin: 10px ;
+    width: 800px;
+    height: 550px;
+
+}
+
+.figure35 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 20px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure35 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 50px 0 0 410px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure35:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(30px,30px,0);
+    z-index: 11;
+}
+.figure35:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-420px,-60px,0);
+    z-index: 11;
+}
+
+.grid36{
+    margin: 0 auto;
+    width: 913px;
+    list-style: none;
+    text-align: center;
+    height: 550px;
+}
+
+.figure36 section{
+    position: absolute;
+    text-align: left;
+    top:10px;
+    left: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.figure36 section h1 {
+    font-size: 300%;
+}
+.figure36 section p {
+    margin-left: 80px;
+    font-size: 80%;
+    color: #616161;
+}
+.figure36 section h4 {
+    margin-left: 80px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure36{
+    margin: 10px ;
+    width: 800px;
+    height: 550px;
+
+}
+
+.figure36 figcaption::before,
+.figure36 figcaption::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9;
+}
+
+.figure36 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 353px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure36 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 20px 0 0 20px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure36:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(360px,20px,0);
+    z-index: 11;
+}
+.figure36:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-30px,-20px,0);
+    z-index: 11;
+}
+.grid37{
+    margin: 0 auto;
+    width: 842px;
+    list-style: none;
+    text-align: center;
+    height: 370px;
+}
+
+.figure37 section{
+    position: absolute;
+    top:50px;
+    left: 0px;
+    text-align: center;
+
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+.figure37 section h1 {
+
+    font-size: 300%;
+}
+.figure37 section p {
+    margin-left: 50px;
+    width: 350px;
+    font-size: 100%;
+    font-family: "Big Caslon";
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #616161;
+}
+.figure37 section h4 {
+
+    width: 400px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure37{
+    margin: 10px ;
+    width: 800px;
+    height: 370px;
+
+}
+
+.figure37 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 20px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure37 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 50px 0 0 410px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure37:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(30px,30px,0);
+    z-index: 11;
+}
+.figure37:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-420px,-60px,0);
+    z-index: 11;
+}
+
+.grid38{
+    margin: 0 auto;
+    width: 873px;
+    list-style: none;
+    text-align: center;
+    height: 550px;
+}
+
+.figure38 section{
+    position: absolute;
+    text-align: left;
+    top:10px;
+    left: 450px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.figure38 section h1 {
+    font-size: 300%;
+}
+.figure38 section p {
+    margin-left: 80px;
+    font-size: 80%;
+    color: #616161;
+}
+.figure38 section h4 {
+    margin-left: 80px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure38{
+    margin: 10px ;
+    width: 800px;
+    height: 550px;
+
+}
+
+.figure38 figcaption::before,
+.figure38 figcaption::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9;
+}
+
+.figure38 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 373px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure38 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 20px 0 0 10px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure38:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(380px,20px,0);
+    z-index: 11;
+}
+.figure38:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-30px,-20px,0);
+    z-index: 11;
+}
+
+.grid39{
+    margin: 0 auto;
+    width: 842px;
+    list-style: none;
+    text-align: center;
+    height: 650px;
+}
+
+.figure39 section{
+    position: absolute;
+    top:50px;
+    left: 0px;
+    text-align: left;
+
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+.figure39 section h1 {
+
+    font-size: 300%;
+}
+.figure39 section p {
+    margin-left: 50px;
+    width: 350px;
+    font-size: 100%;
+    font-family: "Big Caslon";
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #616161;
+}
+.figure39 section h4 {
+    margin-left: 50px;
+    width: 400px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure39{
+    margin: 10px ;
+    width: 800px;
+    height: 650px;
+
+}
+
+.figure39 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 0px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure39 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 50px 0 0 410px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure39:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0px,30px,0);
+    z-index: 11;
+}
+.figure39:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-420px,-60px,0);
+    z-index: 11;
+}
+.figure39:hover img {
+    transform: scale(1)  translate3d(0px, 0px,0);
+    /*transform:;*/
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.5s;
+}
+.figure39 img{
+    transform: scale(1.3)  translate3d(-50px, -100px,0);
+    /*transform:;*/
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.5s;
+}
+
+
+.grid310{
+    margin: 0 auto;
+    width: 873px;
+    list-style: none;
+    text-align: center;
+    height: 540px;
+}
+
+.figure310 section{
+    position: absolute;
+    text-align: left;
+    top:10px;
+    left: 380px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.figure310 section h1 {
+    font-size: 300%;
+}
+.figure310 section p {
+    margin-left: 150px;
+    font-size: 80%;
+    color: #616161;
+}
+.figure310 section h4 {
+    margin-left: 150px;
+    font-size: 100%;
+    color: #212121;
+
+}
+.figure310{
+    margin: 10px ;
+    width: 800px;
+    height: 540px;
+
+}
+
+.figure310 figcaption::before,
+.figure310 figcaption::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9;
+}
+
+.figure310 figcaption::before {
+    right: 0;
+    bottom: 0;
+
+    border-width: 0 373px 20px 0;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure310 figcaption::after {
+    top: 0;
+    left: 0;
+    border-width: 20px 0 0 10px;
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+    z-index: 3;
+}
+
+.figure310:hover figcaption::before{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(380px,20px,0);
+    z-index: 11;
+}
+.figure310:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(-30px,-20px,0);
+    z-index: 11;
+}
+.figure310:hover img {
+    transform: scale(1)  translate3d(0px, 0px,0);
+    /*transform:;*/
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.5s;
+}
+.figure310 img{
+    transform: scale(1.4)  translate3d(-100px, 10px,0);
+    /*transform:;*/
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.5s;
 }
 .animated{
     animation-delay: 0.5s;

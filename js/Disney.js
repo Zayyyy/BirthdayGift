@@ -2,15 +2,16 @@
  * Created by zhaoangyouyou on 03/02/2017.
  */
 $(function() {
-    // $(".nav").headroom({
-    //     tolerance: 5,
-    //     offset: 100,
-    //     classes: {
-    //         initial: "animated",
-    //         pinned: "slideDown",
-    //         unpinned: "slideUp"
-    //     }
-    // });
+    $('#nav').show();
+    $(".nav").headroom({
+        tolerance: 5,
+        offset: 200,
+        classes: {
+            initial: "animated",
+            "pinned": "slideDown",
+            "unpinned": "slideUp"
+        }
+    });
 
 //mobile adaptive
     $(".nav-on").click(function(){
@@ -34,7 +35,6 @@ $(function() {
 
 
 })
-
 
 $(window).resize(function() {
     $("#head").height($(window).height());

@@ -2,6 +2,24 @@
     height: 2000px;
 }
 
+.sound{
+    position: fixed;
+    text-align: right;
+    bottom: 20px;
+    right: 30px;
+    font-family: Futura;
+    color: rgba(255,255,255,1);
+    font-size: 60%;
+    z-index: 10;
+
+    cursor: default;
+}
+.sound span{
+    color: rgba(255,255,255,0.6);
+
+    cursor: pointer;
+}
+
 #head{
     background:#fce4ec no-repeat fixed;
     margin: 0 auto;

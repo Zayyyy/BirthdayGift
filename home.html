@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>index</title>
     <!--<audio id="bgMusic" src="audio/light.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>-->
-
+    <link rel="prefetch" href=" https://zayyyy.github.io/BirthdayGift/Disney.html" />
+    <link rel="prefetch" href=" https://zayyyy.github.io/BirthdayGift/Game.html" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
     <link href="css/globalSetting.css" rel="stylesheet" type="text/css"/>
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
     <link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
 
+
 </head>
 <body>
-
+<div class="sound">
+    <label>SOUND</label>&nbsp;&nbsp;<span id = "sound-label" onclick="pauseMusic()">ON</span>
+</div>
 <div class="nav" id="nav">
     <span class="nav-on"><i></i><i></i><i></i></span>
     <div class="navbar-brand" href="#">HAPPY BIRTHDAY</div>
     <ul class = "navbar">
         <li><a href="#" class="discover item-anchor nav-static nav-active">一</a></li>
-        <li><a href="/square" class="team item-anchor nav-static">生</a></li>
-        <li><a href="/route" class="start item-anchor nav-static">所</a></li>
+        <li><a href="Disney.html" class="team item-anchor nav-static">生</a></li>
+        <li><a href="Game.html" class="start item-anchor nav-static">所</a></li>
         <li><a href="/index" class="index item-anchor nav-static">爱</a></li>
     </ul>
 </div>
@@ -194,7 +198,7 @@
         <canvas id="star"></canvas>
     </div>
 </div>
-<div id="first-head" class="first-head"><div>LET'S GO!</div><section class="wow line5"></section></div>
+<div id="first-head" class="first-head"><div>2016 ALBUM!</div><section class="wow line5"></section></div>
 
 <div id="first">
     <div class="story">
@@ -209,6 +213,38 @@
         </div>
     </div> <!--.story-->
 </div> <!--#intro-->
+
+
+<div id="fifth">
+    <div class="story">
+        <div class="float-right">
+            <div class="line7 wow fadeInDown"></div>
+            <h2 class="wow fadeInDown">Line Cafe</h2>
+            <p class="wow fadeInLeft">-- 布朗熊与可妮兔，<br>-- 就像我们的友谊</p>
+            <div class="wow zoomIn waves waves-animation btn" onclick="jumpToLine()">回忆</div>
+            <p class="wow fadeIn num">7<i class="fa fa-star-o star" id="star3" onclick="clickStar()"></i></p>
+            <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
+            <div class="wow line6"></div>
+        </div>
+    </div> <!--.story-->
+
+</div> <!--#second-->
+<div id="fourth">
+    <div class="story">
+        <div class="float-right">
+            <div class="line7 wow fadeInDown"></div>
+            <h2 class="wow fadeInDown">轻松小熊展</h2>
+            <p class="wow fadeInLeft">-- 与轻松熊的甜蜜时光<br>-- 治愈心灵</p>
+            <div class="wow zoomIn waves waves-animation btn" onclick="jumpToBear()">回忆</div>
+            <p class="wow fadeIn num">10<i class="fa fa-star-o star" id="star2" onclick="clickStar()"></i></p>
+            <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
+            <div class="wow line6"></div>
+        </div>
+    </div> <!--.story-->
+
+</div> <!--#second-->
+
+<div id="second-head" class="first-head"><div>LET'S GO!</div><section class="line5"></section></div>
 
 <div id="second">
     <div class="story">
@@ -229,35 +265,6 @@
 
 </div> <!--#second-->
 
-<div id="fifth">
-    <div class="story">
-        <div class="float-right">
-            <div class="line7 wow fadeInDown"></div>
-            <h2 class="wow fadeInDown">Line Cafe</h2>
-            <p class="wow fadeInLeft">-- 布朗熊与可妮兔，<br>-- 就像我们的友谊</p>
-            <div class="wow zoomIn waves waves-animation btn" onclick="jumpToLine()">回忆</div>
-            <p class="wow fadeIn num">11<i class="fa fa-star-o star" id="star3" onclick="clickStar()"></i></p>
-            <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
-            <div class="wow line6"></div>
-        </div>
-    </div> <!--.story-->
-
-</div> <!--#second-->
-<div id="fourth">
-    <div class="story">
-        <div class="float-right">
-            <div class="line7 wow fadeInDown"></div>
-            <h2 class="wow fadeInDown">轻松小熊展</h2>
-            <p class="wow fadeInLeft">-- 与轻松熊的甜蜜时光<br>-- 治愈心灵</p>
-            <div class="wow zoomIn waves waves-animation btn" onclick="jumpToBear()">回忆</div>
-            <p class="wow fadeIn num">11<i class="fa fa-star-o star" id="star2" onclick="clickStar()"></i></p>
-            <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
-            <div class="wow line6"></div>
-        </div>
-    </div> <!--.story-->
-
-</div> <!--#second-->
-
 <div id="sixth">
     <div class="story">
         <div class="float-right">
@@ -268,7 +275,7 @@
     </div> <!--.story-->
 
 </div> <!--#second-->
-<div id="second-head" class="first-head"><div>LET'S GO!</div><section class="line5"></section></div>
+
 <div id="seventh">
     <div class="story">
         <div class="float-right">
@@ -289,5 +296,26 @@
 <script type="text/javascript" src="js/globalSetting.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/index.js"></script>
+
+<script type="text/javascript">
+
+    var audio = document.getElementsByTagName('audio')[0];
+    audio.volume = 0.1;
+    var flag = 0;
+    function pauseMusic() {
+        if(flag){
+            audio.play();
+            flag = 0;
+            $("#sound-label").text("ON");
+        }
+        else {
+            audio.pause();
+            flag = 1;
+            $("#sound-label").text("OFF");
+
+        }
+
+    }
+</script>
 </body>
 </html>
