@@ -1,6 +1,9 @@
 /**
  * Created by zhaoangyouyou on 02/02/2017.
  */
+
+
+
 document.addEventListener('DOMContentLoaded',function(){
 
     var duration = 1200;
@@ -77,6 +80,20 @@ document.addEventListener('DOMContentLoaded',function(){
         },100)
     }
     document.querySelector('.waves').addEventListener('click',function(e){
+        console.log("yes");
         show(e);
     },!1);
+    document.querySelector('.waves2').addEventListener('click',function(e){
+        console.log("yes");
+        show(e);
+    },!1);
+    document.querySelector('.waves3').addEventListener('click',function(e){
+        console.log("yes");
+        show(e);
+    },!1);
+    document.querySelector('.waves4').addEventListener('click',function(e){
+        console.log("yes");
+        show(e);
+    },!1);
+
 },!1);

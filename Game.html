@@ -6,6 +6,7 @@
 
     <!--<audio id="bgMusic" src="audio/FlowerDance.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>-->
 
+
     <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
     <link href="css/globalSetting.css" rel="stylesheet" type="text/css"/>
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
@@ -18,8 +19,11 @@
 
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/globalSetting.js"></script>
+    <link href="square/pink.css" rel="stylesheet">
 
+    <script type="text/javascript" src="js/icheck.js"></script>
     <title>Game</title>
+
 </head>
 <body>
 <div class="nav" id="nav">
@@ -27,38 +31,38 @@
     <div class="navbar-brand" href="#">HAPPY BIRTHDAY</div>
     <ul class = "navbar">
         <li><a href="home.html" class="discover item-anchor nav-static ">一</a></li>
-        <li><a href="#" class="team item-anchor nav-static nav-active">生</a></li>
-        <li><a href="/route" class="start item-anchor nav-static">所</a></li>
-        <li><a href="/index" class="index item-anchor nav-static">爱</a></li>
+        <li><a href="Disney.html" class="team item-anchor nav-static ">生</a></li>
+        <li><a href="#" class="start item-anchor nav-static ">所</a></li>
+        <li><a href="#" class="index item-anchor nav-static nav-active">爱</a></li>
     </ul>
 </div>
 
 <div id="head">
 
-    <div class="title">
+    <div class="animated fadeInDown title">
         <div class="subtitle">ARE YOU REALLY EXPERT AT WHAT YOU LOVE?</div>
         - 谱写爱的乐章 -
     </div>
     <div class="road">
-        <div class="strip" id="sound-2" onclick="playMusic(event)">
+        <div class="strip" id="sound-0" onclick="playMusic(event)">
             <audio id="audio-beatles-2" class="audio-beatles" src="audio/strip1.mp3" preload="auto" loop=""></audio>
         </div>
-        <div class="strip" id="sound-3" onclick="playMusic(event)">
+        <div class="strip" id="sound-1" onclick="playMusic(event)">
             <audio id="audio-beatles-3" class="audio-beatles" src="audio/strip2.mp3" preload="auto" loop=""></audio>
         </div>
-        <div class="strip" id="sound-4" onclick="playMusic(event)">
+        <div class="strip" id="sound-2" onclick="playMusic(event)">
             <audio id="audio-beatles-4" class="audio-beatles" src="audio/strip3.mp3" preload="auto" loop=""></audio>
         </div>
-        <div class="strip" id="sound-5" onclick="playMusic(event)">
+        <div class="strip" id="sound-3" onclick="playMusic(event)">
             <audio id="audio-beatles-5" class="audio-beatles" src="audio/strip4.mp3" preload="auto" loop=""></audio>
         </div>
-        <div class="strip" id="sound-6" onclick="playMusic(event)">
+        <div class="strip" id="sound-4" onclick="playMusic(event)">
             <audio id="audio-beatles-6" class="audio-beatles" src="audio/strip5.mp3" preload="auto" loop=""></audio>
         </div>
-        <div class="strip" id="sound-7" onclick="playMusic(event)">
+        <div class="strip" id="sound-5" onclick="playMusic(event)">
             <audio id="audio-beatles-7" class="audio-beatles" src="audio/strip6.mp3" preload="auto" loop=""></audio>
         </div>
-        <div class="strip" id="sound-8" onclick="playMusic(event)">
+        <div class="strip" id="sound-6" onclick="playMusic(event)">
             <audio id="audio-beatles-8" class="audio-beatles" src="audio/strip7.mp3" preload="auto" loop=""></audio>
         </div>
     </div>
@@ -67,6 +71,283 @@
     </div>
 </div>
 <div class="content">
+    <div id="begin">
+        <div class="line-container"> <div class="wow line"></div></div>
+        <div class="wow fadeInDown button-container">
+            <div class="test waves waves-animation" onclick="displayQuestion()">接受拷问</div>
+            <h4 class="loveValue"></h4>
+        </div>
+        <div class="line-container"> <div class="wow line"></div></div>
+    </div>
+
+    <section id="question1">
+        <div class="question"><label>1. 小兰和新一（柯南）第一次接吻是哪一集？</label></div>
+        <figure class="image1"></figure>
+        <ul class="list">
+            <li><label><input name="q1" type="radio" value="" checked/>&nbsp;&nbsp;《危命的复活》</label></li>
+            <li><label><input name="q1" type="radio" value="right" />&nbsp;&nbsp;《第十四个目标》 </label></li>
+            <li><label><input name="q1" type="radio" value="" />&nbsp;&nbsp;《天空的遇难船》 </label></li>
+            <li><label><input name="q1" type="radio" value="" />&nbsp;&nbsp;&nbsp;哼，别蒙我，他们根本没有亲过！ </label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="1">确认</div>
+        </ul>
+    </section>
+
+    <section id="question2">
+        <div class="question"><label>2.【幻】牌幻化成哪个人物迷惑小樱？</label></div>
+        <figure class="image2"></figure>
+        <ul class="list">
+            <li><label><input name="q2" type="radio" value="right" checked />&nbsp;&nbsp;&nbsp;抚子</label></li>
+            <li><label><input name="q2" type="radio" value="" />&nbsp;&nbsp;&nbsp;知世</label></li>
+            <li><label><input name="q2" type="radio" value="" />&nbsp;&nbsp;&nbsp;芝士 </label></li>
+            <li><label><input name="q2" type="radio" value="" />&nbsp;&nbsp;&nbsp;桃夭 </label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="2">确认</div>
+        </ul>
+    </section>
+
+    <section id="question3">
+        <div class="question"><label>3. 刘亦菲第一部主演的电视剧是？</label></div>
+        <figure class="image3"></figure>
+        <ul class="list">
+            <li><label><input name="q3" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;《仙剑奇侠传一》</label></li>
+            <li><label><input name="q3" type="radio" value="" />&nbsp;&nbsp;&nbsp;《金粉世家》</label></li>
+            <li><label><input name="q3" type="radio" value="right" />&nbsp;&nbsp;&nbsp;《天龙八部》 </label></li>
+            <li><label><input name="q3" type="radio" value="" />&nbsp;&nbsp;&nbsp;《神雕侠侣》</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="3">确认</div>
+        </ul>
+    </section>
+
+    <section id="question4">
+        <div class="question"><label>4. LMY的初中学号 + ZAYY的初中学号 = ？</label></div>
+        <figure class="image4"></figure>
+        <ul class="list">
+            <li><label><input name="q4" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;22222700</label></li>
+            <li><label><input name="q4" type="radio" value="right" />&nbsp;&nbsp;&nbsp;22222701</label></li>
+            <li><label><input name="q4" type="radio" value="" />&nbsp;&nbsp;&nbsp;22222702 </label></li>
+            <li><label><input name="q4" type="radio" value="" />&nbsp;&nbsp;&nbsp;22222703</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="4">确认</div>
+        </ul>
+    </section>
+
+    <section id="question5">
+        <div class="question"><label>5. LMY第一次推荐给ZAYY的言情小说并且ZAYY看了的是？</label></div>
+        <figure class="image5"></figure>
+        <ul class="list">
+            <li><label><input name="q5" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;《梦回大清》</label></li>
+            <li><label><input name="q5" type="radio" value="" />&nbsp;&nbsp;&nbsp;《绾青丝》</label></li>
+            <li><label><input name="q5" type="radio" value="" />&nbsp;&nbsp;&nbsp;《步步惊心》 </label></li>
+            <li><label><input name="q5" type="radio" value="right" />&nbsp;&nbsp;&nbsp;《穿越与反穿越》</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="5">确认</div>
+        </ul>
+    </section>
+
+    <section id="question6">
+        <audio id="GragonCat" src="audio/gragonCat.mp3" preload="auto" ></audio>
+        <div class="question"><label>6. 点击图片获取音频，该音乐出自宫崎骏的哪部动漫？</label></div>
+        <figure class="image6" onclick="playCat()"></figure>
+        <ul class="list">
+            <li><label><input name="q6" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;《千与千寻》</label></li>
+            <li><label><input name="q6" type="radio" value="right" />&nbsp;&nbsp;&nbsp;《龙猫》</label></li>
+            <li><label><input name="q6" type="radio" value="" />&nbsp;&nbsp;&nbsp;《天空之城》 </label></li>
+            <li><label><input name="q6" type="radio" value="" />&nbsp;&nbsp;&nbsp;《哈尔的移动城堡》</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="6">确认</div>
+        </ul>
+    </section>
+
+    <section id="question7">
+        <div class="question"><label>7. 迪士尼动画片《白雪公主》中老巫婆怎么死的？</label></div>
+        <figure class="image7"></figure>
+        <ul class="list">
+            <li><label><input name="q7" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;穿上铁鞋跳舞至死</label></li>
+            <li><label><input name="q7" type="radio" value="" />&nbsp;&nbsp;&nbsp;听说白雪公主醒了被气死了</label></li>
+            <li><label><input name="q7" type="radio" value="right" />&nbsp;&nbsp;&nbsp;从悬崖上掉下死了 </label></li>
+            <li><label><input name="q7" type="radio" value="" />&nbsp;&nbsp;&nbsp;被王子用剑刺死了</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="7">确认</div>
+        </ul>
+    </section>
+
+    <section id="question8">
+        <div class="question"><label>8. 《生活大爆炸》中Penny姓什么？</label></div>
+        <figure class="image8"></figure>
+        <ul class="list">
+            <li><label><input name="q8" type="radio" value="right" checked />&nbsp;&nbsp;&nbsp;Hofstadter</label></li>
+            <li><label><input name="q8" type="radio" value="" />&nbsp;&nbsp;&nbsp;Leonard</label></li>
+            <li><label><input name="q8" type="radio" value="" />&nbsp;&nbsp;&nbsp;Wyatt </label></li>
+            <li><label><input name="q8" type="radio" value="" />&nbsp;&nbsp;&nbsp;No last name</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="8">确认</div>
+        </ul>
+    </section>
+
+    <section id="question9">
+        <div class="question"><label>9. 《权力的游戏》中究竟是谁杀了乔佛里？</label></div>
+        <figure class="image9"></figure>
+        <ul class="list">
+            <li><label><input name="q9" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;小玫瑰</label></li>
+            <li><label><input name="q9" type="radio" value="" />&nbsp;&nbsp;&nbsp;三傻</label></li>
+            <li><label><input name="q9" type="radio" value="" />&nbsp;&nbsp;&nbsp;小恶魔 </label></li>
+            <li><label><input name="q9" type="radio" value="right" />&nbsp;&nbsp;&nbsp;荆棘女王</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="9">确认</div>
+        </ul>
+    </section>
+
+    <section id="question10">
+        <div class="question"><label>10. 《探险活宝》中Finn和谁在一起过？</label></div>
+        <figure class="image10"></figure>
+        <ul class="list">
+            <li><label><input name="q10" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;泡泡糖公主</label></li>
+            <li><label><input name="q10" type="radio" value="right" />&nbsp;&nbsp;&nbsp;火焰公主</label></li>
+            <li><label><input name="q10" type="radio" value="" />&nbsp;&nbsp;&nbsp;团块公主 </label></li>
+            <li><label><input name="q10" type="radio" value="" />&nbsp;&nbsp;&nbsp;冰雪公主</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="10">确认</div>
+        </ul>
+    </section>
+
+    <section id="question11">
+        <div class="question"><label>11. 我们第一次做的烹饪是什么？</label></div>
+        <figure class="image11"></figure>
+        <ul class="list">
+            <li><label><input name="q11" type="radio" value="right" checked />&nbsp;&nbsp;&nbsp;曲奇饼干</label></li>
+            <li><label><input name="q11" type="radio" value="" />&nbsp;&nbsp;&nbsp;芒果班戟</label></li>
+            <li><label><input name="q11" type="radio" value="" />&nbsp;&nbsp;&nbsp;水果捞 </label></li>
+            <li><label><input name="q11" type="radio" value="" />&nbsp;&nbsp;&nbsp;戚风蛋糕</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="11">确认</div>
+        </ul>
+    </section>
+
+    <section id="question12">
+        <div class="question"><label>12. 迪士尼的第一部动画长片是？</label></div>
+        <figure class="image12"></figure>
+        <ul class="list">
+            <li><label><input name="q12" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;《米老鼠》</label></li>
+            <li><label><input name="q12" type="radio" value="" />&nbsp;&nbsp;&nbsp;《小飞象》</label></li>
+            <li><label><input name="q12" type="radio" value="" />&nbsp;&nbsp;&nbsp;《小鹿斑比》 </label></li>
+            <li><label><input name="q12" type="radio" value="right" />&nbsp;&nbsp;&nbsp;《白雪公主》</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="12">确认</div>
+        </ul>
+    </section>
+
+    <section id="question13">
+        <div class="question"><label>13. 初中拍毕业照那天ZAYY穿的什么颜色的衣服【除校服】？</label></div>
+        <figure class="image13"></figure>
+        <ul class="list">
+            <li><label><input name="q13" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;白色</label></li>
+            <li><label><input name="q13" type="radio" value="" />&nbsp;&nbsp;&nbsp;黑色</label></li>
+            <li><label><input name="q13" type="radio" value="right" />&nbsp;&nbsp;&nbsp;粉色 </label></li>
+            <li><label><input name="q13" type="radio" value="" />&nbsp;&nbsp;&nbsp;橙色</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="13">确认</div>
+        </ul>
+    </section>
+
+    <section id="question14">
+        <div class="question"><label>14. 《神探夏洛克》第二案是根据原著哪篇故事改编的？</label></div>
+        <figure class="image14"></figure>
+        <ul class="list">
+            <li><label><input name="q14" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;《血字的研究》</label></li>
+            <li><label><input name="q14" type="radio" value="right" />&nbsp;&nbsp;&nbsp;《跳舞的小人》</label></li>
+            <li><label><input name="q14" type="radio" value="" />&nbsp;&nbsp;&nbsp;《波西米亚丑闻》 </label></li>
+            <li><label><input name="q14" type="radio" value="" />&nbsp;&nbsp;&nbsp;《四签名》</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="14">确认</div>
+        </ul>
+    </section>
+
+    <section id="question15">
+        <div class="question"><label>15. ZAYY是什么血型 ？</label></div>
+        <figure class="image15"></figure>
+        <ul class="list">
+            <li><label><input name="q15" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;A型</label></li>
+            <li><label><input name="q15" type="radio" value="" />&nbsp;&nbsp;&nbsp;B型</label></li>
+            <li><label><input name="q15" type="radio" value="" />&nbsp;&nbsp;&nbsp;AB型 </label></li>
+            <li><label><input name="q15" type="radio" value="right" />&nbsp;&nbsp;&nbsp;O型</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="15">确认</div>
+        </ul>
+    </section>
+
+    <section id="question16">
+        <div class="question"><label>16. 以下与DC有关的是？</label></div>
+        <figure class="image16"></figure>
+        <ul class="list">
+            <li><label><input name="q16" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;绿巨人</label></li>
+            <li><label><input name="q16" type="radio" value="" />&nbsp;&nbsp;&nbsp;银河护卫队</label></li>
+            <li><label><input name="q16" type="radio" value="" />&nbsp;&nbsp;&nbsp;超胆侠 </label></li>
+            <li><label><input name="q16" type="radio" value="right" />&nbsp;&nbsp;&nbsp;名侦探柯南</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="16">确认</div>
+        </ul>
+    </section>
+
+    <section id="question17">
+        <div class="question"><label>17. LMY和ZAYY欧洲游时在德国去的古堡叫什么？</label></div>
+        <figure class="image17"></figure>
+        <ul class="list">
+            <li><label><input name="q17" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;纽伦堡城堡</label></li>
+            <li><label><input name="q17" type="radio" value="right" />&nbsp;&nbsp;&nbsp;海德堡城堡</label></li>
+            <li><label><input name="q17" type="radio" value="" />&nbsp;&nbsp;&nbsp;维尔茨堡城堡 </label></li>
+            <li><label><input name="q17" type="radio" value="" />&nbsp;&nbsp;&nbsp;法兰克福城堡</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="17">确认</div>
+        </ul>
+    </section>
+
+    <section id="question18">
+        <div class="question"><label>18. LMY和ZAYY在日本环球影视城吃的午饭中不包括？</label></div>
+        <figure class="image18"></figure>
+        <ul class="list">
+            <li><label><input name="q18" type="radio" value="right" checked />&nbsp;&nbsp;&nbsp;意面</label></li>
+            <li><label><input name="q18" type="radio" value="" />&nbsp;&nbsp;&nbsp;米饭</label></li>
+            <li><label><input name="q18" type="radio" value="" />&nbsp;&nbsp;&nbsp;西兰花 </label></li>
+            <li><label><input name="q18" type="radio" value="" />&nbsp;&nbsp;&nbsp;柠檬</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="18">确认</div>
+        </ul>
+    </section>
+
+    <section id="question19">
+        <div class="question"><label>19. 我们的#100天#里第一天晒的是什么？</label></div>
+        <figure class="image19"></figure>
+        <ul class="list">
+            <li><label><input name="q19" type="radio" value="" checked />&nbsp;&nbsp;&nbsp;键盘</label></li>
+            <li><label><input name="q19" type="radio" value="" />&nbsp;&nbsp;&nbsp;书包</label></li>
+            <li><label><input name="q19" type="radio" value="" />&nbsp;&nbsp;&nbsp;鞋 </label></li>
+            <li><label><input name="q19" type="radio" value="right" />&nbsp;&nbsp;&nbsp;水杯</label></li>
+            <div class="btn waves waves-animation" onclick="verifyAnswer(this)" id="19">确认</div>
+        </ul>
+    </section>
+
+    <section id="question20">
+        <div class="question"><label>20. 我们的友情会到什么时候呢？</label></div>
+        <figure class="image20"></figure>
+        <ul class="list">
+            <li><label><input name="q20" type="radio" value="right" checked />&nbsp;&nbsp;&nbsp;永远Forever</label></li>
+            <li><label><input name="q20" type="radio" value="right" />&nbsp;&nbsp;&nbsp;永远Forever</label></li>
+            <li><label><input name="q20" type="radio" value="right" />&nbsp;&nbsp;&nbsp;永远Forever </label></li>
+            <li><label><input name="q20" type="radio" value="right" />&nbsp;&nbsp;&nbsp;永远Forever</label></li>
+            <div class="btn waves waves-animation" onclick="endAnwser(this)" id="20">确认</div>
+        </ul>
+    </section>
+
+
+    <section id="fail">
+        <div class="container">
+            <p>你根本不是真爱!</p>
+            <h4 class="loveValue"></h4>
+            <div class="test waves waves2 waves-animation" onclick="reStart()">重新做人</div>
+        </div>
+    </section>
+
+    <section id="success">
+        <div class="container">
+            <p>真爱满分!</p>
+            <h4 class="loveValue"></h4>
+            <div class="test waves waves3 waves-animation" onclick="easterEgg()">彩蛋</div>
+        </div>
+    </section>
+
+    <section id="normal">
+        <div class="container">
+            <p>虽然你通关了，可是真爱值竟然为负!</p>
+            <h4 class="loveValue"></h4>
+            <div class="test waves waves4 waves-animation" onclick="normal()">再来一次</div>
+        </div>
+    </section>
+    <section id="xPlayer" align="center">
+        <EMBED id="player" src="video/We.mp4" width="800" height="600"  style="scrollbar-3dlight-color: #000">
+    </section>
 
 </div>
 

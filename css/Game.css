@@ -61,6 +61,8 @@
     transition: .9s;
 
     box-shadow: 2px 3px 5px rgba(0,0,0,0.2);
+
+    display: none;
 }
 
 .strip:after, .strip:before {
@@ -114,9 +116,6 @@
     background: #fff;
 }
 
-.content{
-    height: 900px;
-}
 
 .sound{
     -webkit-perspective: 70vh;
@@ -143,3 +142,226 @@
 
     cursor: pointer;
 }
+
+.content{
+    height: 900px;
+    background-color: #212121;
+    overflow-y: hidden;
+}
+
+section{
+    padding-top: 130px;
+    display: none;
+    color: #e2e2e2;
+}
+.question{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+ul{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+li{
+    list-style: none;
+    margin-top: 5px;
+
+}
+
+.btn{
+    font-size: 100%;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 25px;
+    border: rgb(162,118,147) 1px solid;
+    border-radius: 2px;
+
+    margin-top: 20px;
+    width: 70px;
+    height: 25px;
+    color: #fff;
+    background-color: rgba(160,118,147,0.8);
+    -webkit-transition: border-color 0.5s; /* Safari */
+    transition: border-color 0.5s ease-in;
+}
+.btn:hover{
+    border-color: #fff;
+    -webkit-transition: border-color 0.5s; /* Safari */
+    transition: border-color 0.5s ease-in;
+}
+
+
+@keyframes dropDown{
+    0%{
+        /*height: 0;*/
+    }
+    100%{
+        height: 350px;
+    }
+}
+.line-container{
+    padding-top: 20px;
+    height: 350px;
+}
+.line{
+    margin-left: auto;
+    margin-right: auto;
+    width: 2px;
+    height: 0px;
+    animation: dropDown 4.5s ease forwards;
+    background-color: #e2e2e2;
+}
+.button-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.test{
+    font-size: 300%;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 100px;
+    border: rgb(162,118,147) 1px solid;
+    border-radius: 50px;
+    margin-top: 20px;
+
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    background-color: rgba(160,118,147,0.5);
+    -webkit-transition: border-color 0.5s; /* Safari */
+    transition: border-color 0.5s ease-in;
+}
+.test:hover{
+    border-color: #fff;
+    -webkit-transition: border-color 0.5s; /* Safari */
+    transition: border-color 0.5s ease-in;
+}
+
+.container{
+    width: 700px;
+    padding-top: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+.container p{
+    font-size: 400%;
+    color: #e2e2e2;
+}
+h4{
+    font-size: 200%;
+    color: #e2e2e2;
+}
+
+figure{
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.image1{
+    background: url("../image/q1.jpeg"), no-repeat;
+
+}
+.image2{
+    background: url("../image/q2.jpeg"), no-repeat;
+}
+.image3{
+    background: url("../image/q3.jpeg"), no-repeat;
+}
+.image4{
+
+    background: url("../image/q4.jpeg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.image5{
+    background: url("../image/q5.jpeg"), no-repeat;
+    background-size: cover;
+
+}
+.image6{
+    background: url("../image/q6.jpeg"), no-repeat;
+    cursor: pointer;
+}
+.image7{
+    background: url("../image/q7.png"), no-repeat;
+}
+.image8{
+    background: url("../image/q8.jpeg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.image9{
+    background: url("../image/q9.jpeg"), no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.image10{
+    background: url("../image/q10.jpeg"), no-repeat;
+}
+.image11{
+    background: url("../image/q11.jpeg"), no-repeat;
+    background-size: cover;
+}
+.image12{
+     background: url("../image/q12.jpeg"), no-repeat;
+    background-position: center;
+ }
+.image13{
+    background: url("../image/q13.jpeg"), no-repeat;
+}
+.image14{
+    background: url("../image/q14.jpg"), no-repeat;
+    background-position: top center;
+}
+
+.image15{
+    background: url("../image/q15.jpeg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.image16{
+    background: url("../image/q16.jpeg"), no-repeat;
+    background-position: center;
+}
+.image17{
+    background: url("../image/q17.jpeg"), no-repeat;
+}
+.image18{
+    background: url("../image/q18.jpeg"), no-repeat;
+    background-size: 180%;
+    background-position: top center;
+
+}
+.image19{
+     background: url("../image/q19.jpg"), no-repeat;
+    background-size: 100%;
+    background-position: top center;
+ }
+.image20{
+    background: url("../image/q20.jpg"), no-repeat;
+    background-size: 100%;
+    background-position: top center;
+}
+
+
+
+

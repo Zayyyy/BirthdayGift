@@ -1,0 +1,516 @@
+.container{
+    height: 2000px;
+}
+
+.sound{
+    position: fixed;
+    text-align: right;
+    bottom: 20px;
+    right: 30px;
+    font-family: Futura;
+    color: rgba(255,255,255,1);
+    font-size: 60%;
+    z-index: 10;
+
+    cursor: default;
+}
+.sound span{
+    color: rgba(255,255,255,0.6);
+
+    cursor: pointer;
+}
+
+#head{
+    background:#fce4ec no-repeat fixed;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    animation: colorGradient infinite;
+    animation-direction: alternate;
+    animation-duration: 15s;
+    text-align: center;
+    overflow-y: hidden;
+}
+@keyframes colorGradient {
+    0%{
+        background: #90a4ae;
+    }
+    20% {
+
+        background: #78909c;
+    }
+    40% {
+         background: #607d8b;
+    }
+    60% {
+        background: #546e7a ;
+    }
+    70% {
+        background: #455a64 ;
+    }
+
+    80% {
+        background: #37474f ;
+    }
+    90%,100%{
+        background: #263238;
+    }
+
+}
+
+#cake {
+    /*!*display: block;*!*/
+    /*position: relative;*/
+    width: 600px;
+    margin: -250px auto 0 auto;
+}
+
+/* ============================================== Candle
+*/
+.velas {
+    background: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    margin-left: -2.5px;
+    margin-top: -8.33333333px;
+    width: 5px;
+    height: 60px;
+    -webkit-transform: translateY(-300px);
+    -ms-transform: translateY(-300px);
+    transform: translateY(-300px);
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-animation: in 500ms 3.8s ease-out forwards;
+    animation: in 500ms 3.8s ease-out forwards;
+
+}
+
+.velas:after,
+.velas:before {
+    background: rgba(255, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.22222222px;
+}
+
+.velas:after {
+    top: 25%;
+    left: 0;
+}
+
+.velas:before {
+    top: 45%;
+    left: 0;
+}
+
+/* ============================================== Fire
+*/
+.fuego {
+    border-radius: 100%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -2.2px;
+    width: 6.66666667px;
+    height: 18px;
+}
+
+.fuego:nth-child(1) {
+    -webkit-animation: fuego 2s 3.8s infinite;
+    animation: fuego 2s 3.8s infinite;
+}
+
+.fuego:nth-child(2) {
+    -webkit-animation: fuego 1.5s 3.8s infinite;
+    animation: fuego 1.5s 3.8s infinite;
+}
+
+.fuego:nth-child(3) {
+    -webkit-animation: fuego 1s 3.8s infinite;
+    animation: fuego 1s 3.8s infinite;
+}
+
+.fuego:nth-child(4) {
+    -webkit-animation: fuego 0.5s 3.8s infinite;
+    animation: fuego 0.5s 3.8s infinite;
+}
+
+.fuego:nth-child(5) {
+    -webkit-animation: fuego 0.2s 3.8s infinite;
+    animation: fuego 0.2s 3.8s infinite;
+}
+rect{
+    -webkit-transform: translateY(-500px);
+    -ms-transform: translateY(-500px);
+    transform: translateY(-400px);
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-animation: in 300ms 0.1s ease-out forwards;
+    animation: in 300ms 0.1s ease-out forwards;
+}
+/* ============================================== Animation Fire
+*/
+@-webkit-keyframes fuego {
+    0%, 100% {
+        background: rgba(254, 248, 97, 0.5);
+        -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        background: rgba(255, 50, 0, 0.1);
+        -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(-20px) scale(0);
+        transform: translateY(-20px) scale(0);
+    }
+}
+@keyframes fuego {
+    0%, 100% {
+        background: rgba(254, 248, 97, 0.5);
+        -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        background: rgba(255, 50, 0, 0.1);
+        -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(-20px) scale(0);
+        transform: translateY(-20px) scale(0);
+    }
+}
+@-webkit-keyframes in {
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes in {
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes dropDown {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 20px;
+    }
+}
+@keyframes dropDown2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 500px;
+    }
+}
+.line1{
+    /*position: absolute;*/
+    margin-top: -400px;
+    margin-left: 50%;
+    width: 3px;
+    height: 160px;
+    background-color: #fff;
+    animation: in 500ms 4s ease-out forwards;;
+    transform: translateY(-300px);
+}
+.line2{
+    /*position: absolute;*/
+    margin-top: 250px;
+    margin-left: 50%;
+    width: 3px;
+    height: 0px;
+    opacity: 1;
+    background-color: #fff;
+    animation: dropDown 2s 4.5s forwards;
+
+}
+.title-happy{
+    color: white;
+    font-size: 200%;
+    font-weight: 700;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+.title-happy i{
+    font-style: normal;
+    color: #90caf9;
+}
+.line3{
+    /*position: absolute;*/
+    margin-top: 10px;
+    margin-left: 50%;
+    width: 3px;
+    height: 0px;
+    opacity: 1;
+    background-color: #fff;
+    animation: dropDown2 2s 5.5s forwards;
+    overflow-y: hidden;
+
+}
+
+#head .content{
+    position: relative;
+    z-index: 5;
+}
+#star{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /*background-color: ;*/
+}
+.first-head{
+    height: 1000px;
+    background-color: #000000;
+    text-align: center;
+
+    font-size: 200%;
+    letter-spacing: 2px;
+    font-family: Futura;
+    color: #fff;
+    overflow-y: hidden;
+}
+.first-head div{
+    /*line-height: 1000px;*/
+    padding-top: 500px;
+}
+.first-head p{
+    margin-top: 100px;
+    padding-left: 1px;
+    width: 50px;
+    height: 50px;
+
+    border: #fff 1px solid ;
+    border-radius: 50px;
+    line-height: 50px;
+}
+.line4{
+    padding-top: 5px;
+    margin-left: 50%;
+    width: 3px;
+    height: 400px;
+
+    background-color: #fff;
+
+}
+
+
+.line5{
+    margin-top: 10px;
+    margin-left: 50%;
+    width: 3px;
+    height: 0px;
+    animation: dropDown5 4.5s 0.1s forwards;
+    background-color: #fff;
+
+}
+
+#first{
+    background:url(../image/bg1.jpg) no-repeat fixed;
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 1000px;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+#second{
+    background: url(../image/bg2.jpg) no-repeat fixed;
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 1000px;
+    padding: 0;
+    overflow-y: hidden;
+}
+#third{
+    background: url(../image/bg5.jpg) no-repeat fixed;
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 1000px;
+    padding: 0;
+    overflow-y: hidden;
+}
+#fourth{
+    background: url(../image/bg3.jpg) no-repeat fixed;
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 1000px;
+    padding: 0;
+    overflow-y: hidden;
+}
+#fifth{
+    background: url(../image/bg11.jpg) no-repeat fixed;
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 1000px;
+    padding: 0;
+    overflow-y: hidden;
+}
+#sixth{
+    background: url(../image/bg4.jpg) no-repeat fixed;
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 1000px;
+    padding: 0;
+    overflow-y: hidden;
+}
+#seventh{
+    background: url(../image/bg7.jpg) no-repeat fixed;
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 1000px;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+
+
+.story{
+    margin: 0 auto;
+    margin-left: 100px;
+    min-width: 1000px;
+    overflow: auto;
+    width: 980px;
+
+}
+
+.story .float-right{
+    padding: 0 0 0 0;
+    position: relative;
+    width: 400px;
+}
+
+.story h2{
+    margin-top: 10px;
+    font-size: 400%;
+}
+.story p{
+    margin-top: -10px;
+    font-weight: 500;
+    font-size: 120%;
+    line-height: 30px;
+    color: #bdbdbd;
+
+}
+
+.story .btn{
+    font-size: 150%;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 50px;
+    border: #424242 1px solid;
+    border-radius: 2px;
+
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    color: #eceff1;
+    background-color: transparent;
+    -webkit-transition: border-color 0.5s; /* Safari */
+    transition: border-color 0.5s ease-in;
+}
+.btn:hover{
+    border-color: #fff;
+    -webkit-transition: border-color 0.5s; /* Safari */
+    transition: border-color 0.5s ease-in;
+}
+.story .num{
+    color: #fff;
+    font-size: 250%;
+    margin-top: 50px;
+    font-family: "Adobe Garamond Pro";
+}
+.story .star{
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.story .music{
+    margin-left: 30px;
+    cursor: pointer;
+}
+.story .collect {
+    font-size: 100%;
+    margin-left: 72px;
+    font-style: normal;
+}
+
+.story h4{
+    margin-top: -30px;
+    font-weight: 500;
+    font-size: 100%;
+    line-height: 30px;
+    color: #bdbdbd;
+
+}
+.line7{
+    margin-top: 0px;
+    margin-left: 80px;
+    width: 3px;
+    height: 0px;
+    animation: dropDown7 4s ease forwards;
+    background-color: #fff;
+}
+@keyframes dropDown7 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 200px;
+    }
+}
+
+@keyframes dropDown5 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 800px;
+    }
+}
+
+.line6{
+    margin-top: 10px;
+    margin-left: 80px;
+    width: 3px;
+    height: 0px;
+    animation: dropDown5 4s ease forwards;
+    background-color: #fff;
+
+}
