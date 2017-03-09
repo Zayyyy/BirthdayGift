@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>index</title>
-    <audio id="bgMusic" src="audio/funnyday.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+    <audio id="bgMusic" src="audio/funnyday.mp3" preload="auto" autoplay="autoplay" loop="true"></audio>
     <link rel="prefetch" href=" https://zayyyy.github.io/BirthdayGift/Disney.html" />
     <link rel="prefetch" href=" https://zayyyy.github.io/BirthdayGift/Game.html" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
@@ -16,32 +16,36 @@
 
 </head>
 <body>
-<div class="sound">
-    <label>SOUND</label>&nbsp;&nbsp;<span id = "sound-label" onclick="pauseMusic()">ON</span>
-</div>
-<div class="nav" id="nav">
-    <span class="nav-on"><i></i><i></i><i></i></span>
-    <div class="navbar-brand" href="#">HAPPY BIRTHDAY</div>
-    <ul class = "navbar">
-        <li><a href="#" class="discover item-anchor nav-static nav-active">一</a></li>
-        <li><a href="Disney.html" class="team item-anchor nav-static">生</a></li>
-        <li><a href="Wish.html" class="start item-anchor nav-static">所</a></li>
-        <li><a href="Game.html" class="index item-anchor nav-static">爱</a></li>
-    </ul>
-</div>
 
-<div id="head">
+<img src="image/phone.jpg" class="phone">
+<div class="all-container">
 
-    <!--cake-->
-    <div class="content">
-        <!--<div class="velas">-->
+    <div class="sound">
+        <label>SOUND</label>&nbsp;&nbsp;<span id = "sound-label" onclick="pauseMusic()">ON</span>
+    </div>
+    <div class="nav" id="nav">
+        <span class="nav-on"><i></i><i></i><i></i></span>
+        <div class="navbar-brand" href="#">HAPPY BIRTHDAY</div>
+        <ul class = "navbar">
+            <li><a href="#" class="discover item-anchor nav-static nav-active">一</a></li>
+            <li><a href="Disney.html" class="team item-anchor nav-static">生</a></li>
+            <li><a href="Wish.html" class="start item-anchor nav-static">所</a></li>
+            <li><a href="Game.html" class="index item-anchor nav-static">爱</a></li>
+        </ul>
+    </div>
+
+    <div id="head">
+
+        <!--cake-->
+        <div class="content">
+            <!--<div class="velas">-->
             <!--<div class="fuego"></div>-->
             <!--<div class="fuego"></div>-->
             <!--<div class="fuego"></div>-->
             <!--<div class="fuego"></div>-->
             <!--<div class="fuego"></div>-->
-        <!--</div>-->
-        <svg id="cake" version="1.1" x="0px" y="0px" width="200px" height="600px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
+            <!--</div>-->
+            <svg id="cake" version="1.1" x="0px" y="0px" width="200px" height="600px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
     <path fill="#a88679" d="M173.667-13.94c-49.298,0-102.782,0-147.334,0c-3.999,0-4-16.002,0-16.002
 		c44.697,0,96.586,0,147.334,0C177.667-29.942,177.668-13.94,173.667-13.94z">
         <animate id="bizcocho_3" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1" begin="relleno_2.end" dur="0.2s" fill="freeze" values="
@@ -189,142 +193,143 @@
     </path>
     <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
 </svg>
-        <!--<div class="line1"></div>-->
-        <!--<div class="line2"></div>-->
-        <div class="title-happy animated fadeInDown">HAPPY <i>20</i>TH BIRTHDAY, CRYSTAL<br>愿我如星君如月，夜夜流光互皎洁<br><i>20</i> 岁生日快乐, 大月亮 <span class="fa fa-moon-o"></span></div>
-        <!--<div class="line3"></div>-->
+            <!--<div class="line1"></div>-->
+            <!--<div class="line2"></div>-->
+            <div class="title-happy animated fadeInDown">HAPPY <i>20</i>TH BIRTHDAY, CRYSTAL<br>愿我如星君如月，夜夜流光互皎洁<br><i>20</i> 岁生日快乐, 大月亮 <span class="fa fa-moon-o"></span></div>
+            <!--<div class="line3"></div>-->
+        </div>
+        <div>
+            <canvas id="star"></canvas>
+        </div>
     </div>
-    <div>
-        <canvas id="star"></canvas>
-    </div>
+    <div id="first-head" class="first-head"><div>2016 ALBUM!</div><section class="wow line5"></section></div>
+
+    <div id="first">
+        <div class="story">
+            <div class="float-right">
+                <div class="line7 wow fadeInDown"></div>
+                <h2 class="wow fadeInDown">迪士尼之旅</h2>
+                <p class="wow fadeInLeft">-- 童话般的回忆，<br>-- 是梦境，还是现实</p>
+                <div class="wow zoomIn waves waves-animation btn" onclick="jumpToDisney()">回忆</div>
+                <p class="wow fadeIn num">11<i class="fa fa-star-o star" id="star1" onclick="clickStar()"></i></p>
+                <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
+                <div class="wow line6"></div>
+            </div>
+        </div> <!--.story-->
+    </div> <!--#intro-->
+
+
+    <div id="fifth">
+        <div class="story">
+            <div class="float-right">
+                <div class="line7 wow fadeInDown"></div>
+                <h2 class="wow fadeInDown">Line Cafe</h2>
+                <p class="wow fadeInLeft">-- 布朗熊与可妮兔，<br>-- 就像我们的友谊</p>
+                <div class="wow zoomIn waves waves2 waves-animation btn" onclick="jumpToLine()">回忆</div>
+                <p class="wow fadeIn num">&nbsp;7 <i class="fa fa-star-o star" id="star3" onclick="clickStar()"></i></p>
+                <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
+                <div class="wow line6"></div>
+            </div>
+        </div> <!--.story-->
+
+    </div> <!--#second-->
+    <div id="fourth">
+        <div class="story">
+            <div class="float-right">
+                <div class="line7 wow fadeInDown"></div>
+                <h2 class="wow fadeInDown">轻松小熊展</h2>
+                <p class="wow fadeInLeft">-- 与轻松熊的甜蜜时光<br>-- 治愈心灵</p>
+                <div class="wow zoomIn waves waves3 waves-animation btn" onclick="jumpToBear()">回忆</div>
+                <p class="wow fadeIn num">10<i class="fa fa-star-o star" id="star2" onclick="clickStar()"></i></p>
+                <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
+                <div class="wow line6"></div>
+            </div>
+        </div> <!--.story-->
+
+    </div> <!--#second-->
+
+    <div id="second-head" class="first-head"><div>LET'S GO!</div><section class="line5"></section></div>
+
+    <div id="second">
+        <div class="story">
+            <div class="float-right">
+                <div class="line7 wow fadeInDown"></div>
+                <h2 class="wow fadeInDown">许愿池</i></h2>
+                <p class="wow fadeInLeft">-- 新的一岁<br>-- 我有一个小小的心愿</p>
+                <div class="wow zoomIn waves waves4 waves-animation btn" onclick="jumpToWish()">许愿</div>
+                <p class="wow fadeIn num"><i class="fa fa-gift music" ></i><i class="fa fa-gift music" ></i></p>
+                <div class="wow line6"></div>
+            </div>
+        </div> <!--.story-->
+
+    </div> <!--#second-->
+
+
+    <div id="sixth">
+        <div class="story">
+            <div class="float-right">
+                <div class="line7 wow fadeInDown"></div>
+                <h2 class="wow fadeInDown">爱的乐章 </i></h2>
+                <p class="wow fadeInLeft">-- Love For You<br>-- And Love For Me</p>
+                <div class="wow zoomIn waves waves4 waves-animation btn" onclick="jumpToGame()">追寻</div>
+                <p class="wow fadeIn num"><i class="fa fa-music music" ></i><i class="fa fa-music music" ></i></p>
+                <div class="wow line6"></div>
+            </div>
+        </div> <!--.story-->
+
+    </div> <!--#second-->
+
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.headroom.js"></script>
+    <script src="js/headroom_0.7.0.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="js/globalSetting.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/home.js"></script>
+
+    <script type="text/javascript">
+
+        var audio = document.getElementsByTagName('audio')[0];
+        audio.volume = 0.3;
+        var flag = 0;
+        function pauseMusic() {
+            if(flag){
+                audio.play();
+                flag = 0;
+                $("#sound-label").text("ON");
+            }
+            else {
+                audio.pause();
+                flag = 1;
+                $("#sound-label").text("OFF");
+
+            }
+
+        }
+    </script>
+
+
+    <footer>
+        <div id="foot">
+            <i class="fa fa-heart"></i>
+            <h4>Cherish the Momment We Spent Together</h4>
+            <p>永远年轻<br>永远18岁<br>愿你去往之地皆为热土<br>愿你将遇之人皆为挚友<br>愿你不念过去<br>不畏将来<p></p>
+
+            <div class="gapLine"></div>
+            <div class="bottom">
+                <br>
+                Designed and built with all the love in the world <br>
+                Copyright©一个有zayy的项目组 All Rights Reserved（2016-）版权所有 复制必究。<br>
+                当前版本： v1.0.0<br>
+            </div>
+        </div>
+
+
+    </footer>
 </div>
-<div id="first-head" class="first-head"><div>2016 ALBUM!</div><section class="wow line5"></section></div>
-
-<div id="first">
-    <div class="story">
-        <div class="float-right">
-            <div class="line7 wow fadeInDown"></div>
-            <h2 class="wow fadeInDown">迪士尼之旅</h2>
-            <p class="wow fadeInLeft">-- 童话般的回忆，<br>-- 是梦境，还是现实</p>
-            <div class="wow zoomIn waves waves-animation btn" onclick="jumpToDisney()">回忆</div>
-            <p class="wow fadeIn num">11<i class="fa fa-star-o star" id="star1" onclick="clickStar()"></i></p>
-            <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
-            <div class="wow line6"></div>
-        </div>
-    </div> <!--.story-->
-</div> <!--#intro-->
-
-
-<div id="fifth">
-    <div class="story">
-        <div class="float-right">
-            <div class="line7 wow fadeInDown"></div>
-            <h2 class="wow fadeInDown">Line Cafe</h2>
-            <p class="wow fadeInLeft">-- 布朗熊与可妮兔，<br>-- 就像我们的友谊</p>
-            <div class="wow zoomIn waves waves2 waves-animation btn" onclick="jumpToLine()">回忆</div>
-            <p class="wow fadeIn num">&nbsp;7 <i class="fa fa-star-o star" id="star3" onclick="clickStar()"></i></p>
-            <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
-            <div class="wow line6"></div>
-        </div>
-    </div> <!--.story-->
-
-</div> <!--#second-->
-<div id="fourth">
-    <div class="story">
-        <div class="float-right">
-            <div class="line7 wow fadeInDown"></div>
-            <h2 class="wow fadeInDown">轻松小熊展</h2>
-            <p class="wow fadeInLeft">-- 与轻松熊的甜蜜时光<br>-- 治愈心灵</p>
-            <div class="wow zoomIn waves waves3 waves-animation btn" onclick="jumpToBear()">回忆</div>
-            <p class="wow fadeIn num">10<i class="fa fa-star-o star" id="star2" onclick="clickStar()"></i></p>
-            <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
-            <div class="wow line6"></div>
-        </div>
-    </div> <!--.story-->
-
-</div> <!--#second-->
-
-<div id="second-head" class="first-head"><div>LET'S GO!</div><section class="line5"></section></div>
-
-<div id="second">
-    <div class="story">
-        <div class="float-right">
-            <div class="line7 wow fadeInDown"></div>
-            <h2 class="wow fadeInDown">许愿池</i></h2>
-            <p class="wow fadeInLeft">-- 新的一岁<br>-- 我有一个小小的心愿</p>
-            <div class="wow zoomIn waves waves4 waves-animation btn" onclick="jumpToWish()">许愿</div>
-            <p class="wow fadeIn num"><i class="fa fa-gift music" ></i><i class="fa fa-gift music" ></i></p>
-            <div class="wow line6"></div>
-        </div>
-    </div> <!--.story-->
-
-</div> <!--#second-->
-
-
-<div id="sixth">
-    <div class="story">
-        <div class="float-right">
-            <div class="line7 wow fadeInDown"></div>
-            <h2 class="wow fadeInDown">爱的乐章 </i></h2>
-            <p class="wow fadeInLeft">-- Love For You<br>-- And Love For Me</p>
-            <div class="wow zoomIn waves waves4 waves-animation btn" onclick="jumpToGame()">追寻</div>
-            <p class="wow fadeIn num"><i class="fa fa-music music" ></i><i class="fa fa-music music" ></i></p>
-            <div class="wow line6"></div>
-        </div>
-    </div> <!--.story-->
-
-</div> <!--#second-->
-
-
-<script src="js/jquery-3.1.0.min.js"></script>
-<script src="js/jquery.headroom.js"></script>
-<script src="js/headroom_0.7.0.js"></script>
-<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript" src="js/globalSetting.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/home.js"></script>
-
-<script type="text/javascript">
-
-    var audio = document.getElementsByTagName('audio')[0];
-    audio.volume = 0.3;
-    var flag = 0;
-    function pauseMusic() {
-        if(flag){
-            audio.play();
-            flag = 0;
-            $("#sound-label").text("ON");
-        }
-        else {
-            audio.pause();
-            flag = 1;
-            $("#sound-label").text("OFF");
-
-        }
-
-    }
-</script>
-
-
-<footer>
-    <div id="foot">
-        <i class="fa fa-heart"></i>
-        <h4>Cherish the Momment We Spent Together</h4>
-        <p>永远年轻<br>永远18岁<br>愿你去往之地皆为热土<br>愿你将遇之人皆为挚友<br>愿你不念过去<br>不畏将来<p></p>
-
-        <div class="gapLine"></div>
-        <div class="bottom">
-            <br>
-            Designed and built with all the love in the world <br>
-            Copyright©一个有zayy的项目组 All Rights Reserved（2016-）版权所有 复制必究。<br>
-            当前版本： v1.0.0<br>
-        </div>
-    </div>
-
-
-</footer>
 </body>
 
 </html>

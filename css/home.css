@@ -514,3 +514,34 @@ rect{
     background-color: #fff;
 
 }
+.phone{
+    display: none;
+    width: 300px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+}
+@media screen and (max-width: 2080px) {
+    .phone{
+        display: none;
+    }
+    body{
+        background-color: black;
+    }
+    .all-container{
+        display: block;
+    }
+}
+@media screen and (max-width: 930px) {
+    .phone{
+        display: block;
+    }
+    body{
+        background-color: black;
+    }
+    .all-container{
+        display: none;
+    }
+}
