@@ -18,10 +18,12 @@ $(function() {
     });
 
     $("#head").height($(window).height());
+
     new WOW().init();
 })
 $(window).resize(function() {
     $("#head").height($(window).height());
+
 });
 
 $(window).scroll(function(){
@@ -45,6 +47,7 @@ $(document).ready(function(){
     $('#fourth').parallax("100%", 0);
     $('#fifth').parallax("100%", 0);
     $('#sixth').parallax("100%", 0);
+    $('#seventh').parallax("100%", 0);
     $('#seventh').parallax("100%", 0);
     // $('#second').parallax("100%", 0);
     // $('#third').parallax("100%", 0);
@@ -85,8 +88,8 @@ canvas2.height = 100;
 var half = canvas2.width / 2,
     gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
 gradient2.addColorStop(0.025, '#fff');
-gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
-gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
+gradient2.addColorStop(0.1, 'hsl(' + hue + ', 31%, 13%)');
+gradient2.addColorStop(0.25, 'hsl(' + hue + ', 24%, 6%)');
 gradient2.addColorStop(1, 'transparent');
 
 ctx2.fillStyle = gradient2;
@@ -227,5 +230,10 @@ function jumpToLine() {
 function jumpToGame() {
     setInterval(function () {
         window.location = "Game.html";
+    }, 1000);
+}
+function jumpToWish() {
+    setInterval(function () {
+        window.location = "Wish.html";
     }, 1000);
 }

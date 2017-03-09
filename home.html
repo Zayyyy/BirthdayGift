@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>index</title>
-    <!--<audio id="bgMusic" src="audio/light.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>-->
+    <audio id="bgMusic" src="audio/funnyday.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
     <link rel="prefetch" href=" https://zayyyy.github.io/BirthdayGift/Disney.html" />
     <link rel="prefetch" href=" https://zayyyy.github.io/BirthdayGift/Game.html" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
@@ -25,7 +25,7 @@
     <ul class = "navbar">
         <li><a href="#" class="discover item-anchor nav-static nav-active">一</a></li>
         <li><a href="Disney.html" class="team item-anchor nav-static">生</a></li>
-        <li><a href="Game.html" class="start item-anchor nav-static">所</a></li>
+        <li><a href="Wish.html" class="start item-anchor nav-static">所</a></li>
         <li><a href="Game.html" class="index item-anchor nav-static">爱</a></li>
     </ul>
 </div>
@@ -222,7 +222,7 @@
             <h2 class="wow fadeInDown">Line Cafe</h2>
             <p class="wow fadeInLeft">-- 布朗熊与可妮兔，<br>-- 就像我们的友谊</p>
             <div class="wow zoomIn waves waves2 waves-animation btn" onclick="jumpToLine()">回忆</div>
-            <p class="wow fadeIn num">7<i class="fa fa-star-o star" id="star3" onclick="clickStar()"></i></p>
+            <p class="wow fadeIn num">&nbsp;7 <i class="fa fa-star-o star" id="star3" onclick="clickStar()"></i></p>
             <h4 class="wow fadeIn">个回忆<i class="collect">喜欢</i></h4>
             <div class="wow line6"></div>
         </div>
@@ -249,7 +249,12 @@
 <div id="second">
     <div class="story">
         <div class="float-right">
-            <h2>Multiple Backgrounds</h2>
+            <div class="line7 wow fadeInDown"></div>
+            <h2 class="wow fadeInDown">许愿池</i></h2>
+            <p class="wow fadeInLeft">-- 新的一岁<br>-- 我有一个小小的心愿</p>
+            <div class="wow zoomIn waves waves4 waves-animation btn" onclick="jumpToWish()">许愿</div>
+            <p class="wow fadeIn num"><i class="fa fa-gift music" ></i><i class="fa fa-gift music" ></i></p>
+            <div class="wow line6"></div>
         </div>
     </div> <!--.story-->
 
@@ -261,7 +266,7 @@
         <div class="float-right">
             <div class="line7 wow fadeInDown"></div>
             <h2 class="wow fadeInDown">爱的乐章 </i></h2>
-            <p class="wow fadeInLeft">-- Love For You，<br>-- And Love For Me</p>
+            <p class="wow fadeInLeft">-- Love For You<br>-- And Love For Me</p>
             <div class="wow zoomIn waves waves4 waves-animation btn" onclick="jumpToGame()">追寻</div>
             <p class="wow fadeIn num"><i class="fa fa-music music" ></i><i class="fa fa-music music" ></i></p>
             <div class="wow line6"></div>
@@ -284,7 +289,7 @@
 <script type="text/javascript">
 
     var audio = document.getElementsByTagName('audio')[0];
-    audio.volume = 0.1;
+    audio.volume = 0.3;
     var flag = 0;
     function pauseMusic() {
         if(flag){
@@ -301,5 +306,25 @@
 
     }
 </script>
+
+
+<footer>
+    <div id="foot">
+        <i class="fa fa-heart"></i>
+        <h4>Cherish the Momment We Spent Together</h4>
+        <p>永远年轻<br>永远18岁<br>愿你去往之地皆为热土<br>愿你将遇之人皆为挚友<br>愿你不念过去<br>不畏将来<p></p>
+
+        <div class="gapLine"></div>
+        <div class="bottom">
+            <br>
+            Designed and built with all the love in the world <br>
+            Copyright©一个有zayy的项目组 All Rights Reserved（2016-）版权所有 复制必究。<br>
+            当前版本： v1.0.0<br>
+        </div>
+    </div>
+
+
+</footer>
 </body>
+
 </html>

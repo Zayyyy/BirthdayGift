@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wish</title>
+
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="css/globalSetting.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/Wish.css" rel="stylesheet" type="text/css"/>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.headroom.js"></script>
+    <script src="js/headroom_0.7.0.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/globalSetting.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/Wish.js"></script>
+
+</head>
+<body >
+<audio class="audio-beatles" src="audio/HisTheme.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+<audio class="audio-beatles" src="audio/Snowy.mp3" preload="auto" loop=""></audio>
+<audio class="audio-beatles" src="audio/sans.mp3" preload="auto" loop=""></audio>
+<audio class="audio-beatles" src="audio/Dogsong.mp3" preload="auto" loop=""></audio>
+<audio class="audio-beatles" src="audio/OneTrueLove.mp3" preload="auto" loop=""></audio>
+<audio class="audio-beatles" src="audio/Alphys.mp3" preload="auto" loop=""></audio>
+<div class="nav" id="nav">
+    <span class="nav-on"><i></i><i></i><i></i></span>
+    <div class="navbar-brand" href="#">HAPPY BIRTHDAY</div>
+    <ul class = "navbar">
+        <li><a href="home.html" class="discover item-anchor nav-static ">一</a></li>
+        <li><a href="Disney.html" class="team item-anchor nav-static ">生</a></li>
+        <li><a href="#" class="start item-anchor nav-static nav-active">所</a></li>
+        <li><a href="Game.html" class="index item-anchor nav-static">爱</a></li>
+    </ul>
+</div>
+
+<div class="sound">
+    <label>SOUND</label>&nbsp;&nbsp;<span id = "sound-label" onclick="pauseMusic()">ON</span>
+</div>
+<div id="head">
+    <div class="hero">
+        <div class="demo sarah">
+            <img id="spot"  class="halftone" src="image/spot.jpg" data-src="image/spot.jpg" />
+        </div>
+    </div>
+    <div class="animated fadeInRight subtitle">IN 2017...</div>
+    <div class="animated fadeInLeft title">BE MORE AND MORE PRETTY</div>
+    <p class="animated fadeInRight">- BEST WISH -</p>
+    <section class="animated fadeInDown"></section>
+</div>
+
+<div id="first-head" class="first-head"><section class="wow line5"></section><div>COLLECT MORE WISHES</div><section class="wow line5"></section></div>
+<div class="container">
+    <div id="words">< select one > </div>
+    <img src="image/toriel.png" class="toriel" onclick="showWords(event)">
+    <img src="image/papyrus.png" class="papyrus" onclick="showWords(event)">
+    <img src="image/sans.png" class="sans" onclick="showWords(event)">
+    <img src="image/flowey.png" class="flowey" onclick="showWords(event)">
+
+    <img src="image/undyne.png" class="undyne" onclick="showWords(event)">
+    <img src="image/Alphys.png" class="alphys" onclick="showWords(event)">
+</div>
+
+<script src="js/breathing-halftone.pkgd.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+
+    var audio = document.getElementsByTagName('audio')[0];
+    audio.volume = 0.3;
+
+
+    function pauseMusic() {
+        if(flag){
+            audio.play();
+            flag = 0;
+            $("#sound-label").text("ON");
+        }
+        else {
+            for(var temp = 0; temp < audioList.length; temp++ ){
+                if (!audioList[temp].paused) {
+                    audioList[temp].pause();
+                }
+            }
+//            audio.pause();
+            flag = 1;
+            $("#sound-label").text("OFF");
+
+        }
+
+    }
+</script>
+
+<footer>
+    <div id="foot">
+        <i class="fa fa-heart"></i>
+        <h4>Cherish the Momment We Spent Together</h4>
+        <p>永远年轻<br>永远18岁<br>愿你去往之地皆为热土<br>愿你将遇之人皆为挚友<br>愿你不念过去<br>不畏将来<p></p>
+
+        <div class="gapLine"></div>
+        <div class="bottom">
+            <br>
+            Designed and built with all the love in the world <br>
+            Copyright©一个有zayy的项目组 All Rights Reserved（2016-）版权所有 复制必究。<br>
+            当前版本： v1.0.0<br>
+        </div>
+    </div>
+
+
+</footer>
+</body>
+</html>

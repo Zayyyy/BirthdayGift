@@ -193,12 +193,13 @@ body{
 @media screen and (max-width: 768px) {
     .nav{
         opacity: 0.9;
+        height: 50px;
     }
     .nav ul {
         display: none;
         position: fixed;
         width: 20%;
-        margin-top: 50px;
+
         margin-left: 70%;
         border-width: 2px;
         border-style: solid;
@@ -267,3 +268,39 @@ body{
     pointer-events:none
 }
 
+#foot{
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    color: white;
+}
+#foot i{
+    color: white;
+    margin-top: 150px;
+    padding: 20px;
+    font-size: 200%;
+    border: 2px solid;
+    border-radius:20px;
+}
+#foot h4{
+    margin-top: 80px;
+    font-size: 150%;
+}
+#foot p{
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+#foot .gapLine{
+    margin-top: 150px;
+    opacity: 0.5;
+    width: 100%;
+    height: 1px;
+    background-color: #eceff1;
+}
+#foot .bottom{
+    color: rgba(255,255,255,0.8);
+    font-size: 60%;
+    margin-top: 20px;
+
+}
